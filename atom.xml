@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>A级博客</title>
+  <icon>https://avatars0.githubusercontent.com/u/49670244?s=460&amp;v=4</icon>
+  <subtitle>A级博、Alevel blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.alevel.tech/"/>
+  <updated>2020-06-01T13:08:41.695Z</updated>
+  <id>https://blog.alevel.tech/</id>
+  
+  <author>
+    <name>admin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wordpress导入hexo ——图片处理</title>
+    <link href="https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
+    <id>https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</id>
+    <published>2020-05-25T20:23:30.000Z</published>
+    <updated>2020-06-01T13:08:41.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;本文解决了wordpress迁移hexo过程中的图片处理问题。 &lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;
+&lt;p&gt;目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了&lt;strong&gt;图片&lt;/strong&gt;怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。&lt;br&gt;&lt;img data-src=&quot;https://cloud.alevel.tech/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg&quot; alt=&quot;搜索结果&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>steam上新CDN了</title>
+    <link href="https://blog.alevel.tech/2020/05/21/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/"/>
+    <id>https://blog.alevel.tech/2020/05/21/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/</id>
+    <published>2020-05-20T20:05:00.000Z</published>
+    <updated>2020-05-26T07:09:06.587Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;这让人心慌，不知道有谁能够让你诉说&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;  
+&lt;p&gt;笔者今日偶然发现steam上新CDN了，而貌似还没有报道。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="新闻" scheme="https://blog.alevel.tech/tags/%E6%96%B0%E9%97%BB/"/>
+    
+      <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>telegram使用小结</title>
+    <link href="https://blog.alevel.tech/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://blog.alevel.tech/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-05-15T09:14:00.000Z</published>
+    <updated>2020-05-26T07:09:26.421Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;一旦熟悉用法，telegram的开放性和强大性会让人爱不释手&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;
+&lt;p&gt;（本文不介绍telegram的下载安装等，此类文章很多）&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拒绝百度，重返BT——最新种子教学</title>
+    <link href="https://blog.alevel.tech/2020/04/23/%E6%8B%92%E7%BB%9D%E7%99%BE%E5%BA%A6%EF%BC%8C%E9%87%8D%E8%BF%94BT%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E7%A7%8D%E5%AD%90%E6%95%99%E5%AD%A6/"/>
+    <id>https://blog.alevel.tech/2020/04/23/%E6%8B%92%E7%BB%9D%E7%99%BE%E5%BA%A6%EF%BC%8C%E9%87%8D%E8%BF%94BT%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E7%A7%8D%E5%AD%90%E6%95%99%E5%AD%A6/</id>
+    <published>2020-04-23T08:23:00.000Z</published>
+    <updated>2020-05-14T04:10:46.550Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;百度之恶相信大家都有所了解。今天教各位新老司机和伸手党如何在2020年使用BT种子上传/下载。  &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“应收尽收”与“群体免疫”</title>
+    <link href="https://blog.alevel.tech/2020/03/16/%E8%AF%B4%E8%AF%B4%E8%8B%B1%E5%9B%BD/"/>
+    <id>https://blog.alevel.tech/2020/03/16/%E8%AF%B4%E8%AF%B4%E8%8B%B1%E5%9B%BD/</id>
+    <published>2020-03-16T04:54:00.000Z</published>
+    <updated>2020-05-14T04:11:39.382Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;英国近日来的公开宣布“群体感染”，“群体免疫”在国际舆论场上引起了极大的争议与讨论。究竟什么样的一种方式是适合于英国的呢？为什么英国会采取同意大利及中国不同的措施呢？  &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="随笔" scheme="https://blog.alevel.tech/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装flarum论坛</title>
+    <link href="https://blog.alevel.tech/2020/02/21/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/"/>
+    <id>https://blog.alevel.tech/2020/02/21/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/</id>
+    <published>2020-02-21T05:06:00.000Z</published>
+    <updated>2020-06-01T13:08:35.716Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;根据实际经验，按照官网步骤是不能在licess的lnmp环境下安装的，会遭遇大大小小的问题。&lt;br&gt;最主要的原因是进入Beta10后，Flarum的系统对权限要求得非常严格。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简易加密教程</title>
+    <link href="https://blog.alevel.tech/2019/12/17/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/"/>
+    <id>https://blog.alevel.tech/2019/12/17/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/</id>
+    <published>2019-12-16T20:52:50.000Z</published>
+    <updated>2020-06-01T13:08:14.151Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;有感于目前网络上对GPG加密的教程基本大多晦涩难懂，且排版一言难尽（如下图）&lt;br&gt;&lt;img data-src=&quot;https://i.loli.net/2019/12/16/fJb1gKZ9WBltEzP.png&quot; alt=&quot;某网站的教程&quot;&gt;&lt;br&gt;笔者决意写一篇通俗易懂的GPG教程&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="PGP" scheme="https://blog.alevel.tech/tags/PGP/"/>
+    
+      <category term="加密" scheme="https://blog.alevel.tech/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水一发</title>
+    <link href="https://blog.alevel.tech/2019/11/26/%E6%B0%B4%E4%B8%80%E5%8F%91/"/>
+    <id>https://blog.alevel.tech/2019/11/26/%E6%B0%B4%E4%B8%80%E5%8F%91/</id>
+    <published>2019-11-26T08:58:35.000Z</published>
+    <updated>2020-05-26T07:11:04.295Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;水一发&quot;&gt;&lt;a href=&quot;#水一发&quot; class=&quot;headerlink&quot; title=&quot;水一发&quot;&gt;&lt;/a&gt;水一发&lt;/h1&gt;&lt;p&gt;有人想买域名吗？可上(此处寻找)[&lt;span class=&quot;exturl&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
+    
+    
+      <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生日快乐</title>
+    <link href="https://blog.alevel.tech/2019/10/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/"/>
+    <id>https://blog.alevel.tech/2019/10/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</id>
+    <published>2019-10-17T08:39:28.000Z</published>
+    <updated>2020-05-14T04:11:24.485Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;生日快乐&quot;&gt;&lt;a href=&quot;#生日快乐&quot; class=&quot;headerlink&quot; title=&quot;生日快乐&quot;&gt;&lt;/a&gt;生日快乐&lt;/h2&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>华为账号改区</title>
+    <link href="https://blog.alevel.tech/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/"/>
+    <id>https://blog.alevel.tech/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/</id>
+    <published>2019-09-17T12:05:05.000Z</published>
+    <updated>2020-06-01T13:08:32.601Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑&quot;&gt;&lt;a href=&quot;#还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑&quot; class=&quot;headerlink&quot; title=&quot;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了(笑&quot;&gt;&lt;/a&gt;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了&lt;del&gt;(笑&lt;/del&gt;&lt;/h3&gt;&lt;p&gt;站长前日新注册了一个港区华为账号玩玩&lt;strong&gt;（只需邮箱）&lt;/strong&gt;，然后……具体看图↓&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Huawei" scheme="https://blog.alevel.tech/tags/Huawei/"/>
+    
+      <category term="华为" scheme="https://blog.alevel.tech/tags/%E5%8D%8E%E4%B8%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谣言止于智者之搜索疑云</title>
+    <link href="https://blog.alevel.tech/2019/09/12/%E8%B0%A3%E8%A8%80/"/>
+    <id>https://blog.alevel.tech/2019/09/12/%E8%B0%A3%E8%A8%80/</id>
+    <published>2019-09-12T09:53:08.000Z</published>
+    <updated>2020-05-14T04:11:43.946Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;自己看&quot;&gt;&lt;a href=&quot;#自己看&quot; class=&quot;headerlink&quot; title=&quot;自己看&quot;&gt;&lt;/a&gt;自己看&lt;/h2&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+      <category term="bing" scheme="https://blog.alevel.tech/tags/bing/"/>
+    
+      <category term="baidu" scheme="https://blog.alevel.tech/tags/baidu/"/>
+    
+      <category term="google" scheme="https://blog.alevel.tech/tags/google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>炒银一时爽</title>
+    <link href="https://blog.alevel.tech/2019/09/07/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/"/>
+    <id>https://blog.alevel.tech/2019/09/07/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/</id>
+    <published>2019-09-07T11:14:17.000Z</published>
+    <updated>2020-06-01T13:08:22.140Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;炒银一时爽，亏损火葬场&quot;&gt;&lt;a href=&quot;#炒银一时爽，亏损火葬场&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
+    
+    
+      <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+  </entry>
+  
+</feed>
