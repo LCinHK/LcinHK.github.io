@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2020-06-01T13:08:41.695Z</updated>
+  <updated>2020-06-28T12:01:36.371Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flarum通过反代使用Imgur上传图片</title>
+    <link href="https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"/>
+    <id>https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</id>
+    <published>2020-06-28T17:47:20.000Z</published>
+    <updated>2020-06-28T12:01:36.371Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;本文教你如何在无法访问Imgur时通过反代以实现在flarum论坛上使用imgur上传图片功能 &lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Wordpress导入hexo ——图片处理</title>
@@ -194,6 +222,29 @@
       <category term="PGP" scheme="https://blog.alevel.tech/tags/PGP/"/>
     
       <category term="加密" scheme="https://blog.alevel.tech/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的姥姥斗大麻：当华裔家长出头抗争</title>
+    <link href="https://blog.alevel.tech/2019/12/10/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/"/>
+    <id>https://blog.alevel.tech/2019/12/10/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/</id>
+    <published>2019-12-09T19:04:50.000Z</published>
+    <updated>2020-06-28T09:42:24.326Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;本文转载自纽约时报中文网&quot;&gt;&lt;a href=&quot;#本文转载自纽约时报中文网&quot; class=&quot;headerlink&quot; title=&quot;本文转载自纽约时报中文网&quot;&gt;&lt;/a&gt;本文转载自纽约时报中文网&lt;/h1&gt;&lt;h4 id=&quot;原文链接&quot;&gt;&lt;a href=&quot;#原文链接&quot; class=&quot;headerlink&quot; title=&quot;原文链接&quot;&gt;&lt;/a&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9jbi5ueXRpbWVzLmNvbS91c2EvMjAxOTEyMDkvY2hpbmVzZS1ncmFubmllcy1nYW5qYS8/dXRtX3NvdXJjZT10b3AxMC1pbi1hcnRpY2xlJnV0bV9tZWRpdW09YXJ0aWNsZXBhZ2UmdXRtX2NhbXBhaWduPXdlYg==&quot;&gt;原文链接&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h4&gt;
+    
+    </summary>
+    
+    
+      <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
+    
+    
+      <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="纽约时报" scheme="https://blog.alevel.tech/tags/%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5/"/>
     
   </entry>
   
