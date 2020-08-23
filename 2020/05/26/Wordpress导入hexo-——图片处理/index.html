@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
@@ -15,36 +15,38 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-<script id="hexo-configurations">
+<script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
   </script>
 
-  <meta name="description" content="本文解决了wordpress迁移hexo过程中的图片处理问题。                           目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了图片怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。">
+  <meta name="description" content="本文解决了wordpress迁移hexo过程中的图片处理问题。    目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了图片怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wordpress导入hexo ——图片处理">
 <meta property="og:url" content="https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/index.html">
 <meta property="og:site_name" content="A级博客">
-<meta property="og:description" content="本文解决了wordpress迁移hexo过程中的图片处理问题。                           目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了图片怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。">
+<meta property="og:description" content="本文解决了wordpress迁移hexo过程中的图片处理问题。    目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了图片怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg?download=1">
 <meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/NewFile.png?download=1">
 <meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E4%BF%9D%E5%AD%98.png?download=1">
 <meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%97%A0%E7%94%A8%E5%9B%BE%E7%89%87.png?download=1">
 <meta property="article:published_time" content="2020-05-25T20:23:30.000Z">
-<meta property="article:modified_time" content="2020-07-31T14:16:21.381Z">
+<meta property="article:modified_time" content="2020-08-23T14:57:11.945Z">
 <meta property="article:author" content="admin">
 <meta property="article:tag" content="干货">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg">
+<meta name="twitter:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg?download=1">
 
 <link rel="canonical" href="https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/">
 
 
-<script id="page-configurations">
+<script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -73,24 +75,36 @@
 
   <noscript>
   <style>
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
@@ -104,22 +118,23 @@
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <main class="main">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">A级博客</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">A级博、Alevel blog</p>
   </div>
@@ -129,7 +144,6 @@
     </div>
   </div>
 </div>
-
 
 
 
@@ -172,19 +186,132 @@
 
 
 </div>
-    </header>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
 
-    
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理文字"><span class="nav-number">2.</span> <span class="nav-text">处理文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包源站图片"><span class="nav-number">3.</span> <span class="nav-text">打包源站图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择存放地"><span class="nav-number">3.1.</span> <span class="nav-text">选择存放地</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#替换图片链接"><span class="nav-number">4.</span> <span class="nav-text">替换图片链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装python3"><span class="nav-number">4.0.1.</span> <span class="nav-text">安装python3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行程序"><span class="nav-number">4.0.2.</span> <span class="nav-text">运行程序</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#新建py文件"><span class="nav-number">4.0.2.1.</span> <span class="nav-text">新建py文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#粘贴代码"><span class="nav-number">4.0.2.2.</span> <span class="nav-text">粘贴代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改代码"><span class="nav-number">4.0.2.3.</span> <span class="nav-text">修改代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#运行代码"><span class="nav-number">4.0.2.4.</span> <span class="nav-text">运行代码</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">5.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可选-删除wordpress生成的无用图片"><span class="nav-number">5.1.</span> <span class="nav-text">(可选)删除wordpress生成的无用图片</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="admin"
+      src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
+  <p class="site-author-name" itemprop="name">admin</p>
+  <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0FsZXZlbHRlY2g=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Aleveltech"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9teS5zY2llLmNsb3Vk" title="https:&#x2F;&#x2F;my.scie.cloud">国交网盘</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9xdWl6bWFzdGVyLmNu" title="https:&#x2F;&#x2F;quizmaster.cn">Quizmaster</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9laW52ZXJuZS5naXRodWIuaW8=" title="https:&#x2F;&#x2F;einverne.github.io">Verne in GitHub</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly82NmNjZmYud29yay9mcmllbmRsaW5rLw==" title="https:&#x2F;&#x2F;66ccff.work&#x2F;friendlink&#x2F;">杏铃の小本</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9tb2VzYWt1eWEuMDAwd2ViaG9zdGFwcC5jb20vJWU1JThmJThiJWU5JTkzJWJldw==" title="https:&#x2F;&#x2F;moesakuya.000webhostapp.com&#x2F;%e5%8f%8b%e9%93%bew">神楽坂咲夜</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9rcmF1LnRvcC9saW5rLw==" title="https:&#x2F;&#x2F;krau.top&#x2F;link&#x2F;">krau'blog</span>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
   <div class="reading-progress-bar"></div>
 
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main class="main">
+
       <div class="main-inner">
-        <div class="content-wrap">
-          
+        
 
-          <div class="content post posts-expand">
-            
+        <div class="content post posts-expand">
+          
 
     
   
@@ -195,12 +322,14 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
       <meta itemprop="name" content="admin">
-      <meta itemprop="description" content="A级博、Alevel blog">
+      <meta itemprop="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
+
+    
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           Wordpress导入hexo ——图片处理
@@ -220,7 +349,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 14:16:21" itemprop="dateModified" datetime="2020-07-31T14:16:21Z">2020-07-31</time>
+                <time title="修改时间：2020-08-23 14:57:11" itemprop="dateModified" datetime="2020-08-23T14:57:11Z">2020-08-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,27 +377,32 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-			<script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="9480035167"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         <blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>本文解决了wordpress迁移hexo过程中的图片处理问题。 </p>
+<p>本文解决了wordpress迁移hexo过程中的图片处理问题。 </p>
 
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-<p>目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了<strong>图片</strong>怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。<br><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg" alt="搜索结果"></p>
+</blockquote>
+<p>目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了<strong>图片</strong>怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。<br><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg?download=1" alt="搜索结果"></p>
 <a id="more"></a>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><pre class="mermaid" style="text-align: center;">
-            graph TD
-            A[处理源站文字] -->|通过hexo-migrator-wordpress解决| B(处理图片)
-B --> C{打包源站图片}
-C --> D[本地存放]
-C --> E[云空间存放]
-D --> F[替换图片链接]
-E --> F[替换图片链接]
-F --> G[问题解决]
-          </pre>
+graph TD
+A[处理源站文字] --&gt;|通过hexo-migrator-wordpress解决| B(处理图片)
+B --&gt; C{打包源站图片}
+C --&gt; D[本地存放]
+C --&gt; E[云空间存放]
+D --&gt; F[替换图片链接]
+E --&gt; F[替换图片链接]
+F --&gt; G[问题解决]
+</pre>
 <h2 id="处理文字"><a href="#处理文字" class="headerlink" title="处理文字"></a>处理文字</h2><p>网络上已有<strong>大量</strong>类似文章，请<span class="exturl" data-url="aHR0cHM6Ly9jbi5iaW5nLmNvbS9zZWFyY2g/cT13b3JkcHJlc3MrJUU1JUFGJUJDJUU1JTg1JUE1aGV4bw==">自行搜索<i class="fa fa-external-link-alt"></i></span>。</p>
 <h2 id="打包源站图片"><a href="#打包源站图片" class="headerlink" title="打包源站图片"></a>打包源站图片</h2><p>  其实就是将<strong>整个</strong>uploads文件夹（位于wp-contents下）在不改动内容的情况下全部下载到我们的本地。例如，原来的wordpress站可直接访问的图片<code>https://域名/wp-contents/uploads/2019/06/图片1.jpeg</code>下载完成后路径应该是<code>C:/存放用的文件夹名/uploads/2019/06/图片1.jpeg</code>。 </p>
 <ul>
@@ -301,24 +435,24 @@ F --> G[问题解决]
     
         <div class="reward-container">
   <div></div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+  <button onclick="document.getElementById('post-reward').classList.toggle('active');">
+    赞赏
   </button>
-  <div id="qr" style="display: none;">
+  <div id="post-reward">
       
-      <div style="display: inline-block;">
-        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 轉數快">
-        <p>轉數快</p>
+      <div>
+        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 微信">
+        <p>微信</p>
       </div>
       
-      <div style="display: inline-block;">
-        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 支付宝/微信/云闪付等">
-        <p>支付宝/微信/云闪付等</p>
+      <div>
+        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 支付宝">
+        <p>支付宝</p>
       </div>
       
-      <div style="display: inline-block;">
-        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin 翼支付">
-        <p>翼支付</p>
+      <div>
+        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin PayPal">
+        <p>PayPal</p>
       </div>
 
   </div>
@@ -373,8 +507,8 @@ F --> G[问题解决]
 
 
 
-          </div>
-          
+        </div>
+        
     <div class="comments" id="gitalk-container"></div>
 
 <script>
@@ -399,129 +533,6 @@ F --> G[问题解决]
   }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理文字"><span class="nav-number">2.</span> <span class="nav-text">处理文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包源站图片"><span class="nav-number">3.</span> <span class="nav-text">打包源站图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择存放地"><span class="nav-number">3.1.</span> <span class="nav-text">选择存放地</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#替换图片链接"><span class="nav-number">4.</span> <span class="nav-text">替换图片链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装python3"><span class="nav-number">4.0.1.</span> <span class="nav-text">安装python3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行程序"><span class="nav-number">4.0.2.</span> <span class="nav-text">运行程序</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#新建py文件"><span class="nav-number">4.0.2.1.</span> <span class="nav-text">新建py文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#粘贴代码"><span class="nav-number">4.0.2.2.</span> <span class="nav-text">粘贴代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改代码"><span class="nav-number">4.0.2.3.</span> <span class="nav-text">修改代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#运行代码"><span class="nav-number">4.0.2.4.</span> <span class="nav-text">运行代码</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">5.</span> <span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可选-删除wordpress生成的无用图片"><span class="nav-number">5.1.</span> <span class="nav-text">(可选)删除wordpress生成的无用图片</span></a></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="admin"
-      src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
-  <p class="site-author-name" itemprop="name">admin</p>
-  <div class="site-description" itemprop="description">A级博、Alevel blog</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">15</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">13</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
-      </span>
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
-      </span>
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0FsZXZlbHRlY2g=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Aleveltech"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
-      </span>
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
-      </span>
-  </div>
-
-
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
-      Links
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9teS5zY2llLmNsb3Vk" title="https:&#x2F;&#x2F;my.scie.cloud">国交网盘</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9xdWl6bWFzdGVyLmNu" title="https:&#x2F;&#x2F;quizmaster.cn">Quizmaster</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9laW52ZXJuZS5naXRodWIuaW8=" title="https:&#x2F;&#x2F;einverne.github.io">Verne in GitHub</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly82NmNjZmYud29yay9mcmllbmRsaW5rLw==" title="https:&#x2F;&#x2F;66ccff.work&#x2F;friendlink&#x2F;">杏铃の小本</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9tb2VzYWt1eWEuMDAwd2ViaG9zdGFwcC5jb20vJWU1JThmJThiJWU5JTkzJWJldw==" title="https:&#x2F;&#x2F;moesakuya.000webhostapp.com&#x2F;%e5%8f%8b%e9%93%bew">神楽坂咲夜</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9rcmF1LnRvcC9saW5rLw==" title="https:&#x2F;&#x2F;krau.top&#x2F;link&#x2F;">krau'blog</span>
-        </li>
-    </ul>
-  </div>
-
-      </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
-        </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 侧边展示 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2894842076773522"
-     data-ad-slot="9231202274"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
       </div>
     </main>
 
@@ -540,28 +551,12 @@ F --> G[问题解决]
   </span>
   <span class="author" itemprop="copyrightHolder">admin</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> 强力驱动
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
   </div>
 
-			<!-- Matomo -->
-			<script type="text/javascript">
-			  var _paq = window._paq || [];
-			  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-			  _paq.push(['trackPageView']);
-			  _paq.push(['enableLinkTracking']);
-			  (function() {
-				var u="//piwik.scie.cloud/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '3']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-			  })();
-			</script>
-			<!-- End Matomo Code -->
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -591,58 +586,50 @@ F --> G[问题解决]
 
 
 
+			<!-- Matomo -->
+			<script type="text/javascript">
+			  var _paq = window._paq || [];
+			  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+				var u="//piwik.scie.cloud/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			  })();
+			</script>
+			<!-- End Matomo Code -->
       </div>
     </footer>
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1/dist/ribbon.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
-
-
 <script src="/js/next-boot.js"></script>
-
-
-  <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js"></script>
 
 
   
   <script>
     (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
 
@@ -657,28 +644,15 @@ F --> G[问题解决]
 
 
 
-<script>
-if (document.querySelectorAll('pre.mermaid').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
-    mermaid.initialize({
-      theme    : 'default',
-      logLevel : 3,
-      flowchart: { curve     : 'linear' },
-      gantt    : { axisFormat: '%m/%d/%Y' },
-      sequence : { actorMargin: 50 }
-    });
-  }, window.mermaid);
-}
-</script>
 
 
   
 
   
-  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
-      quicklink({
+      quicklink.listen({
         timeout : 3000,
         priority: true,
         ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/',]
@@ -689,7 +663,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+NexT.utils.loadComments('#gitalk-container', () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
     var gitalk = new Gitalk({
       clientID    : 'b5ffcfc9a1ae16735def',

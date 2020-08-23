@@ -2,23 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.alevel.tech/2020/05/21/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/</loc>
+    <loc>https://blog.alevel.tech/about/index.html</loc>
     
-    <lastmod>2020-07-31T14:19:03.174Z</lastmod>
+    <lastmod>2020-08-23T15:04:30.325Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</loc>
     
-    <lastmod>2020-07-31T14:16:21.381Z</lastmod>
+    <lastmod>2020-08-23T14:57:11.945Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</loc>
+    
+    <lastmod>2020-08-23T13:19:32.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.alevel.tech/2020/07/31/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/</loc>
+    
+    <lastmod>2020-08-23T13:18:35.552Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.alevel.tech/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/</loc>
     
-    <lastmod>2020-07-31T14:15:22.827Z</lastmod>
+    <lastmod>2020-08-23T13:18:15.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.alevel.tech/2020/05/21/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/</loc>
+    
+    <lastmod>2020-07-31T14:19:03.174Z</lastmod>
     
   </url>
   
@@ -89,27 +110,6 @@
     <loc>https://blog.alevel.tech/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/</loc>
     
     <lastmod>2020-07-31T13:37:29.410Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.alevel.tech/2020/07/31/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/</loc>
-    
-    <lastmod>2020-07-31T13:37:27.339Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</loc>
-    
-    <lastmod>2020-07-31T13:37:26.817Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.alevel.tech/about/index.html</loc>
-    
-    <lastmod>2020-07-02T06:59:25.370Z</lastmod>
     
   </url>
   

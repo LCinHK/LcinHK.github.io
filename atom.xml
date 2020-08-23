@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2020-07-31T13:37:27.339Z</updated>
+  <updated>2020-08-23T13:18:35.552Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://blog.alevel.tech/2020/07/31/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/"/>
     <id>https://blog.alevel.tech/2020/07/31/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/</id>
     <published>2020-07-30T23:40:56.000Z</published>
-    <updated>2020-07-31T13:37:27.339Z</updated>
+    <updated>2020-08-23T13:18:35.552Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;有很多坑！哭（/TДT)/ &lt;/p&gt;
+&lt;p&gt;有很多坑！哭（/TДT)/ &lt;/p&gt;
 
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -49,16 +47,14 @@
     <link href="https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"/>
     <id>https://blog.alevel.tech/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</id>
     <published>2020-06-28T17:47:20.000Z</published>
-    <updated>2020-07-31T13:37:26.817Z</updated>
+    <updated>2020-08-23T13:19:32.483Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;本文教你如何在无法访问Imgur时通过反代以实现在flarum论坛上使用imgur上传图片功能 &lt;/p&gt;
+&lt;p&gt;本文教你如何在无法访问Imgur时通过反代以实现在flarum论坛上使用imgur上传图片功能 &lt;/p&gt;
 
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -77,17 +73,15 @@
     <link href="https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/"/>
     <id>https://blog.alevel.tech/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</id>
     <published>2020-05-25T20:23:30.000Z</published>
-    <updated>2020-07-31T14:16:21.381Z</updated>
+    <updated>2020-08-23T14:57:11.945Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;本文解决了wordpress迁移hexo过程中的图片处理问题。 &lt;/p&gt;
+&lt;p&gt;本文解决了wordpress迁移hexo过程中的图片处理问题。 &lt;/p&gt;
 
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;
-&lt;p&gt;目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了&lt;strong&gt;图片&lt;/strong&gt;怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。&lt;br&gt;&lt;img data-src=&quot;https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg&quot; alt=&quot;搜索结果&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;目前网上随便就能搜到很多wordpress迁移至hexo的教程，但极少数提到了&lt;strong&gt;图片&lt;/strong&gt;怎么处理的问题。很多搬家的用户会遇到不知道如何将大量的图片搬运到hexo的问题。&lt;br&gt;&lt;img data-src=&quot;https://cloud.alevel.tech/d/mVJPbX5A/q/images/wordpress%E6%96%87/%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C.jpg?download=1&quot; alt=&quot;搜索结果&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -111,11 +105,9 @@
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;这让人心慌，不知道有谁能够让你诉说&lt;/p&gt;
+&lt;p&gt;这让人心慌，不知道有谁能够让你诉说&lt;/p&gt;
 
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;  
+&lt;/blockquote&gt;  
 &lt;p&gt;笔者今日偶然发现steam上新CDN了，而貌似还没有报道。&lt;/p&gt;
     
     </summary>
@@ -137,16 +129,14 @@
     <link href="https://blog.alevel.tech/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/"/>
     <id>https://blog.alevel.tech/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/</id>
     <published>2020-05-15T09:14:00.000Z</published>
-    <updated>2020-07-31T14:15:22.827Z</updated>
+    <updated>2020-08-23T13:18:15.513Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;一旦熟悉用法，telegram的开放性和强大性会让人爱不释手&lt;/p&gt;
+&lt;p&gt;一旦熟悉用法，telegram的开放性和强大性会让人爱不释手&lt;/p&gt;
 
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;（本文不介绍telegram的下载安装等，此类文章很多）&lt;/p&gt;
     
     </summary>
