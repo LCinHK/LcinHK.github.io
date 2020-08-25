@@ -222,7 +222,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -235,7 +235,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -335,10 +335,10 @@
       <div class="post-body">
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              目前共计 13 个标签
+              目前共计 14 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Huawei/" style="font-size: 12px;">Huawei</a> <a href="/tags/PGP/" style="font-size: 12px;">PGP</a> <a href="/tags/baidu/" style="font-size: 12px;">baidu</a> <a href="/tags/bing/" style="font-size: 12px;">bing</a> <a href="/tags/google/" style="font-size: 12px;">google</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 12px;">加密</a> <a href="/tags/%E5%8D%8E%E4%B8%BA/" style="font-size: 12px;">华为</a> <a href="/tags/%E5%B9%B2%E8%B4%A7/" style="font-size: 30px;">干货</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px;">教程</a> <a href="/tags/%E6%96%B0%E9%97%BB/" style="font-size: 12px;">新闻</a> <a href="/tags/%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5/" style="font-size: 12px;">纽约时报</a> <a href="/tags/%E9%97%B2%E8%AF%9D/" style="font-size: 18px;">闲话</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 12px;">随笔</a>
+              <a href="/tags/Huawei/" style="font-size: 12px;">Huawei</a> <a href="/tags/PGP/" style="font-size: 12px;">PGP</a> <a href="/tags/baidu/" style="font-size: 12px;">baidu</a> <a href="/tags/bing/" style="font-size: 12px;">bing</a> <a href="/tags/google/" style="font-size: 12px;">google</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 12px;">加密</a> <a href="/tags/%E5%8D%8E%E4%B8%BA/" style="font-size: 12px;">华为</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 12px;">学习</a> <a href="/tags/%E5%B9%B2%E8%B4%A7/" style="font-size: 30px;">干货</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px;">教程</a> <a href="/tags/%E6%96%B0%E9%97%BB/" style="font-size: 12px;">新闻</a> <a href="/tags/%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5/" style="font-size: 12px;">纽约时报</a> <a href="/tags/%E9%97%B2%E8%AF%9D/" style="font-size: 18px;">闲话</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 12px;">随笔</a>
             </div>
           </div>
         
@@ -491,6 +491,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
 
 
   
