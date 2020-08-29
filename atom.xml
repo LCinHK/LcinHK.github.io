@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2020-08-25T02:26:49.353Z</updated>
+  <updated>2020-08-29T09:49:45.264Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔: 网络二线关</title>
+    <link href="https://blog.alevel.tech/2020/08/25/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/"/>
+    <id>https://blog.alevel.tech/2020/08/25/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/</id>
+    <published>2020-08-25T12:58:27.000Z</published>
+    <updated>2020-08-29T09:49:45.264Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;拿好你的边防证，带你进入新时代的网络二线关 &lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;web3.0是一个崭新的时代，一个互联网+的时代，一个智能手机主流的时代，却也是一个划地分治的时代。&lt;br&gt;不同以往的”公海“概念，现在的互联网由一个又一个的“经济特区”组成。进入经济特区，必须持有边防证。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
+    
+    
+      <category term="随笔" scheme="https://blog.alevel.tech/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="杂文" scheme="https://blog.alevel.tech/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>前端学习笔记——手机上的网页原生分享webshare</title>
