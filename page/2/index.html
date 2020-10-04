@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 5.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
@@ -14,14 +14,16 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  
-  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
@@ -32,12 +34,9 @@
 <meta property="og:description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="admin">
-<meta property="article:tag" content="A级博客">
-<meta property="article:tag" content=" Alevel blog">
-<meta property="article:tag" content=" 技术博客">
-<meta property="article:tag" content=" 技术">
-<meta property="article:tag" content=" 技巧">
+<meta property="article:tag" content="A级博客, Alevel blog, 技术博客, 技术, 技巧, 谷歌">
 <meta name="twitter:card" content="summary">
+
 
 <link rel="canonical" href="https://blog.alevel.tech/page/2/">
 
@@ -104,19 +103,24 @@
   </style>
 </noscript>
 
-	<!-- Google AdSense start -->
-	<script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Google AdSense end -->
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
 <link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-    <main class="main">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="header-inner"><div class="site-brand-container">
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
         <span class="toggle-line"></span>
@@ -144,7 +148,7 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -182,7 +186,7 @@
 
 
 </div>
-          
+        
   
   <div class="toggle sidebar-toggle">
     <span class="toggle-line"></span>
@@ -208,13 +212,13 @@
       <!--/noindex-->
 
       <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="admin"
       src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
   <p class="site-author-name" itemprop="name">admin</p>
   <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
 </div>
-<div class="site-state-wrap animated">
+<div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
@@ -237,7 +241,7 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author animated">
+  <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
@@ -251,9 +255,12 @@
         <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
       </span>
   </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
 
 
-  <div class="links-of-blogroll animated">
+  <div class="links-of-blogroll site-overview-item animated">
     <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
       Links
     </div>
@@ -288,29 +295,32 @@
 </script>
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div class="sidebar-dimmer"></div>
 
 
-      </header>
+    </header>
 
-      
+    
   <div class="reading-progress-bar"></div>
 
 <noscript>
-  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
 
 
-      <div class="main-inner">
-        
-
-        <div class="content index posts-expand">
-          
+    <div class="main-inner index posts-expand">
       
+
+      
+    
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2020/02/21/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2020/02/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -321,41 +331,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/21/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/" class="post-title-link" itemprop="url">安装flarum论坛</a>
+            <a href="/2020/02/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/" class="post-title-link" itemprop="url">安装flarum论坛</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-02-21 05:06:00" itemprop="dateCreated datePublished" datetime="2020-02-21T05:06:00Z">2020-02-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:29" itemprop="dateModified" datetime="2020-07-31T13:37:29Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2020-02-21 05:06:00" itemprop="dateCreated datePublished" datetime="2020-02-21T05:06:00+08:00">2020-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -367,7 +370,7 @@
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>根据实际经验，按照官网步骤是不能在licess的lnmp环境下安装的，会遭遇大大小小的问题。<br>最主要的原因是进入Beta10后，Flarum的系统对权限要求得非常严格。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/21/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/#more" rel="contents">
+              <a class="btn" href="/2020/02/%E5%AE%89%E8%A3%85flarum%E8%AE%BA%E5%9D%9B/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -379,19 +382,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/12/17/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/12/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -402,41 +412,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/17/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">简易加密教程</a>
+            <a href="/2019/12/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">简易加密教程</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-12-16 20:52:50" itemprop="dateCreated datePublished" datetime="2019-12-16T20:52:50Z">2019-12-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:33" itemprop="dateModified" datetime="2020-07-31T13:37:33Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2019-12-16 20:52:50" itemprop="dateCreated datePublished" datetime="2019-12-16T20:52:50+08:00">2019-12-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -448,7 +451,7 @@
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有感于目前网络上对GPG加密的教程基本大多晦涩难懂，且排版一言难尽（如下图）<br><img data-src="https://i.loli.net/2019/12/16/fJb1gKZ9WBltEzP.png" alt="某网站的教程"><br>笔者决意写一篇通俗易懂的GPG教程</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/17/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/#more" rel="contents">
+              <a class="btn" href="/2019/12/%E7%AE%80%E6%98%93%E5%8A%A0%E5%AF%86%E6%95%99%E7%A8%8B/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -460,19 +463,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/12/10/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/12/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -483,41 +493,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/10/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/" class="post-title-link" itemprop="url">我的姥姥斗大麻：当华裔家长出头抗争</a>
+            <a href="/2019/12/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/" class="post-title-link" itemprop="url">我的姥姥斗大麻：当华裔家长出头抗争</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-12-09 19:04:50" itemprop="dateCreated datePublished" datetime="2019-12-09T19:04:50Z">2019-12-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:30" itemprop="dateModified" datetime="2020-07-31T13:37:30Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2019-12-09 19:04:50" itemprop="dateCreated datePublished" datetime="2019-12-09T19:04:50+08:00">2019-12-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -529,7 +532,7 @@
           <h1 id="本文转载自纽约时报中文网"><a href="#本文转载自纽约时报中文网" class="headerlink" title="本文转载自纽约时报中文网"></a>本文转载自纽约时报中文网</h1><h4 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a><span class="exturl" data-url="aHR0cHM6Ly9jbi5ueXRpbWVzLmNvbS91c2EvMjAxOTEyMDkvY2hpbmVzZS1ncmFubmllcy1nYW5qYS8/dXRtX3NvdXJjZT10b3AxMC1pbi1hcnRpY2xlJnV0bV9tZWRpdW09YXJ0aWNsZXBhZ2UmdXRtX2NhbXBhaWduPXdlYg==">原文链接<i class="fa fa-external-link-alt"></i></span></h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/10/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/#more" rel="contents">
+              <a class="btn" href="/2019/12/%E6%88%91%E7%9A%84%E5%A7%A5%E5%A7%A5%E6%96%97%E5%A4%A7%E9%BA%BB%EF%BC%9A%E5%BD%93%E5%8D%8E%E8%A3%94%E5%AE%B6%E9%95%BF%E5%87%BA%E5%A4%B4%E6%8A%97%E4%BA%89/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -541,19 +544,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/11/26/%E6%B0%B4%E4%B8%80%E5%8F%91/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/11/%E6%B0%B4%E4%B8%80%E5%8F%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -564,41 +574,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/26/%E6%B0%B4%E4%B8%80%E5%8F%91/" class="post-title-link" itemprop="url">水一发</a>
+            <a href="/2019/11/%E6%B0%B4%E4%B8%80%E5%8F%91/" class="post-title-link" itemprop="url">水一发</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-26 08:58:35" itemprop="dateCreated datePublished" datetime="2019-11-26T08:58:35Z">2019-11-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:31" itemprop="dateModified" datetime="2020-07-31T13:37:31Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2019-11-26 08:58:35" itemprop="dateCreated datePublished" datetime="2019-11-26T08:58:35+08:00">2019-11-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -625,19 +628,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/10/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/10/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -648,32 +658,25 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/" class="post-title-link" itemprop="url">生日快乐</a>
+            <a href="/2019/10/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/" class="post-title-link" itemprop="url">生日快乐</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-17 08:39:28" itemprop="dateCreated datePublished" datetime="2019-10-17T08:39:28Z">2019-10-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:32" itemprop="dateModified" datetime="2020-07-31T13:37:32Z">2020-07-31</time>
-              </span>
+      <time title="创建时间：2019-10-17 08:39:28" itemprop="dateCreated datePublished" datetime="2019-10-17T08:39:28+08:00">2019-10-17</time>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -685,7 +688,7 @@
           <h2 id="生日快乐"><a href="#生日快乐" class="headerlink" title="生日快乐"></a>生日快乐</h2>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/10/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/#more" rel="contents">
+              <a class="btn" href="/2019/10/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -697,19 +700,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -720,41 +730,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/" class="post-title-link" itemprop="url">华为账号改区</a>
+            <a href="/2019/09/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/" class="post-title-link" itemprop="url">华为账号改区</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-17 12:05:05" itemprop="dateCreated datePublished" datetime="2019-09-17T12:05:05Z">2019-09-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:29" itemprop="dateModified" datetime="2020-07-31T13:37:29Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2019-09-17 12:05:05" itemprop="dateCreated datePublished" datetime="2019-09-17T12:05:05+08:00">2019-09-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -766,7 +769,7 @@
           <h3 id="还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑"><a href="#还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑" class="headerlink" title="还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了(笑"></a>还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了<del>(笑</del></h3><p>站长前日新注册了一个港区华为账号玩玩<strong>（只需邮箱）</strong>，然后……具体看图↓</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/09/17/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/#more" rel="contents">
+              <a class="btn" href="/2019/09/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -778,19 +781,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/12/%E8%B0%A3%E8%A8%80/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/%E8%B0%A3%E8%A8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -801,32 +811,25 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/09/12/%E8%B0%A3%E8%A8%80/" class="post-title-link" itemprop="url">谣言止于智者之搜索疑云</a>
+            <a href="/2019/09/%E8%B0%A3%E8%A8%80/" class="post-title-link" itemprop="url">谣言止于智者之搜索疑云</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-12 09:53:08" itemprop="dateCreated datePublished" datetime="2019-09-12T09:53:08Z">2019-09-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:34" itemprop="dateModified" datetime="2020-07-31T13:37:34Z">2020-07-31</time>
-              </span>
+      <time title="创建时间：2019-09-12 09:53:08" itemprop="dateCreated datePublished" datetime="2019-09-12T09:53:08+08:00">2019-09-12</time>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -838,7 +841,7 @@
           <h2 id="自己看"><a href="#自己看" class="headerlink" title="自己看"></a>自己看</h2>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/09/12/%E8%B0%A3%E8%A8%80/#more" rel="contents">
+              <a class="btn" href="/2019/09/%E8%B0%A3%E8%A8%80/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -850,19 +853,26 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/07/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2019/09/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
@@ -873,41 +883,34 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="A级博客">
     </span>
-
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/09/07/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/" class="post-title-link" itemprop="url">炒银一时爽</a>
+            <a href="/2019/09/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/" class="post-title-link" itemprop="url">炒银一时爽</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-07 11:14:17" itemprop="dateCreated datePublished" datetime="2019-09-07T11:14:17Z">2019-09-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 13:37:32" itemprop="dateModified" datetime="2020-07-31T13:37:32Z">2020-07-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2019-09-07 11:14:17" itemprop="dateCreated datePublished" datetime="2019-09-07T11:14:17+08:00">2019-09-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8F%8D%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">反常</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -926,7 +929,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-          <h1 id="炒银一时爽，亏损火葬场"><a href="#炒银一时爽，亏损火葬场" class="headerlink" title="炒银一时爽，亏损火葬场"></a>炒银一时爽，亏损火葬场</h1><p>站长炒贵金属亏了<strong>20%</strong>，已彻底自闭。<br><del>会放鸽子</del></p>
+          <h1 id="炒银一时爽，亏损火葬场"><a href="#炒银一时爽，亏损火葬场" class="headerlink" title="炒银一时爽，亏损火葬场"></a>炒银一时爽，亏损火葬场</h1><p>站长炒贵金属亏了**20%**，已彻底自闭。<br><del>会放鸽子</del></p>
 
       
     </div>
@@ -934,13 +937,16 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
-  
-  
+</div>
+
+
+
 
 
   
@@ -950,8 +956,7 @@
 
 
 
-        </div>
-        
+      
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -960,7 +965,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -969,20 +974,20 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
+      const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
 
-      </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+  <footer class="footer">
+    <div class="footer-inner">
+      
 
-        
+      
 
 <div class="copyright">
   
@@ -993,15 +998,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">admin</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
-  </div>
-  <div class="addthis_inline_share_toolbox">
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
-  </div>
-
-        
 <div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -1010,7 +1007,6 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -1020,48 +1016,22 @@
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
-
-			<!-- Matomo -->
-			<script type="text/javascript">
-			  var _paq = window._paq || [];
-			  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-			  _paq.push(['trackPageView']);
-			  _paq.push(['enableLinkTracking']);
-			  (function() {
-				var u="//piwik.scie.cloud/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '3']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-			  })();
-			</script>
-			<!-- End Matomo Code -->
-      </div>
-    </footer>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
   </div>
 
+    </div>
+  </footer>
+
   
-  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1/dist/ribbon.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
@@ -1087,8 +1057,8 @@
 
 
 <script>
-if (document.querySelectorAll('pre.mermaid').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -1101,10 +1071,43 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
   
 
   
-  <script src="//cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

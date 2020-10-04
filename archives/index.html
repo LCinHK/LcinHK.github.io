@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 5.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
   <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
@@ -14,14 +14,16 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  
-  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
@@ -32,12 +34,9 @@
 <meta property="og:description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="admin">
-<meta property="article:tag" content="A级博客">
-<meta property="article:tag" content=" Alevel blog">
-<meta property="article:tag" content=" 技术博客">
-<meta property="article:tag" content=" 技术">
-<meta property="article:tag" content=" 技巧">
+<meta property="article:tag" content="A级博客, Alevel blog, 技术博客, 技术, 技巧, 谷歌">
 <meta name="twitter:card" content="summary">
+
 
 <link rel="canonical" href="https://blog.alevel.tech/archives/">
 
@@ -104,19 +103,24 @@
   </style>
 </noscript>
 
-	<!-- Google AdSense start -->
-	<script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Google AdSense end -->
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
 <link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-    <main class="main">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="header-inner"><div class="site-brand-container">
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
         <span class="toggle-line"></span>
@@ -144,7 +148,7 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -182,7 +186,7 @@
 
 
 </div>
-          
+        
   
   <div class="toggle sidebar-toggle">
     <span class="toggle-line"></span>
@@ -208,13 +212,13 @@
       <!--/noindex-->
 
       <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="admin"
       src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
   <p class="site-author-name" itemprop="name">admin</p>
   <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
 </div>
-<div class="site-state-wrap animated">
+<div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
@@ -237,7 +241,7 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author animated">
+  <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
@@ -251,9 +255,12 @@
         <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
       </span>
   </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
 
 
-  <div class="links-of-blogroll animated">
+  <div class="links-of-blogroll site-overview-item animated">
     <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
       Links
     </div>
@@ -288,30 +295,29 @@
 </script>
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div class="sidebar-dimmer"></div>
 
 
-      </header>
+    </header>
 
-      
+    
   <div class="reading-progress-bar"></div>
 
 <noscript>
-  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
 
 
-      <div class="main-inner">
-        
+    <div class="main-inner archive posts-collapse">
+      
 
-        <div class="content archive">
-          
+      
 
   
   
   
   <div class="post-block">
-    <div class="posts-collapse">
+    <div class="post-content">
       <div class="collection-title">
         <span class="collection-header">嗯..! 目前共计 18 篇日志。 继续努力。</span>
       </div>
@@ -323,201 +329,201 @@
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-09-21T09:49:31Z"
+              datetime="2020-09-21T09:49:31+08:00"
               content="2020-09-21">
           09-21
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/09/21/%E4%BA%92%E8%81%94%E7%BD%91%E9%9F%AD%E8%8F%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B4%A0%E5%85%BB/" itemprop="url">
+          <a class="post-title-link" href="/2020/09/%E4%BA%92%E8%81%94%E7%BD%91%E9%9F%AD%E8%8F%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B4%A0%E5%85%BB/" itemprop="url">
             <span itemprop="name">互联网韭菜的自我修养</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-08-25T12:58:27Z"
+              datetime="2020-08-25T12:58:27+08:00"
               content="2020-08-25">
           08-25
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/08/25/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/" itemprop="url">
+          <a class="post-title-link" href="/2020/08/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/" itemprop="url">
             <span itemprop="name">随笔: 网络二线关</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-08-19T14:12:48Z"
+              datetime="2020-08-19T14:12:48+08:00"
               content="2020-08-19">
           08-19
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/08/19/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/" itemprop="url">
+          <a class="post-title-link" href="/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/" itemprop="url">
             <span itemprop="name">前端学习笔记——手机上的网页原生分享webshare</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-07-30T23:40:56Z"
+              datetime="2020-07-30T23:40:56+08:00"
               content="2020-07-30">
           07-30
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/07/31/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/" itemprop="url">
+          <a class="post-title-link" href="/2020/07/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/" itemprop="url">
             <span itemprop="name">flarum搬迁记</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-06-28T17:47:20Z"
+              datetime="2020-06-28T17:47:20+08:00"
               content="2020-06-28">
           06-28
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/06/29/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" itemprop="url">
+          <a class="post-title-link" href="/2020/06/flarum%E5%8F%8D%E4%BB%A3%E4%BD%BF%E7%94%A8Imgur%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" itemprop="url">
             <span itemprop="name">flarum通过反代使用Imgur上传图片、视频</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-05-25T20:23:30Z"
+              datetime="2020-05-25T20:23:30+08:00"
               content="2020-05-25">
           05-25
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/05/26/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/" itemprop="url">
+          <a class="post-title-link" href="/2020/05/Wordpress%E5%AF%BC%E5%85%A5hexo-%E2%80%94%E2%80%94%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/" itemprop="url">
             <span itemprop="name">Wordpress导入hexo ——图片处理</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-05-20T20:05:00Z"
+              datetime="2020-05-20T20:05:00+08:00"
               content="2020-05-20">
           05-20
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/05/21/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/" itemprop="url">
+          <a class="post-title-link" href="/2020/05/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/" itemprop="url">
             <span itemprop="name">steam上新CDN了</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-05-15T09:14:00Z"
+              datetime="2020-05-15T09:14:00+08:00"
               content="2020-05-15">
           05-15
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/" itemprop="url">
+          <a class="post-title-link" href="/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/" itemprop="url">
             <span itemprop="name">telegram使用小结</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-04-23T08:23:00Z"
+              datetime="2020-04-23T08:23:00+08:00"
               content="2020-04-23">
           04-23
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/04/23/%E6%8B%92%E7%BB%9D%E7%99%BE%E5%BA%A6%EF%BC%8C%E9%87%8D%E8%BF%94BT%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E7%A7%8D%E5%AD%90%E6%95%99%E5%AD%A6/" itemprop="url">
+          <a class="post-title-link" href="/2020/04/%E6%8B%92%E7%BB%9D%E7%99%BE%E5%BA%A6%EF%BC%8C%E9%87%8D%E8%BF%94BT%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E7%A7%8D%E5%AD%90%E6%95%99%E5%AD%A6/" itemprop="url">
             <span itemprop="name">拒绝百度，重返BT——最新种子教学</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <div class="post-meta">
+      <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2020-03-16T04:54:00Z"
+              datetime="2020-03-16T04:54:00+08:00"
               content="2020-03-16">
           03-16
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/03/16/%E8%AF%B4%E8%AF%B4%E8%8B%B1%E5%9B%BD/" itemprop="url">
+          <a class="post-title-link" href="/2020/03/%E8%AF%B4%E8%AF%B4%E8%8B%B1%E5%9B%BD/" itemprop="url">
             <span itemprop="name">“应收尽收”与“群体免疫”</span>
           </a>
       </div>
 
+      
     </header>
   </article>
 
@@ -535,8 +541,7 @@
 
 
 
-        </div>
-        
+      
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -545,7 +550,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -554,20 +559,20 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
+      const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
 
-      </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+  <footer class="footer">
+    <div class="footer-inner">
+      
 
-        
+      
 
 <div class="copyright">
   
@@ -578,15 +583,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">admin</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
-  </div>
-  <div class="addthis_inline_share_toolbox">
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
-  </div>
-
-        
 <div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
@@ -595,7 +592,6 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -605,48 +601,22 @@
       </span>
     </span>
 </div>
-
-
-
-
-
-
-
-
-			<!-- Matomo -->
-			<script type="text/javascript">
-			  var _paq = window._paq || [];
-			  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-			  _paq.push(['trackPageView']);
-			  _paq.push(['enableLinkTracking']);
-			  (function() {
-				var u="//piwik.scie.cloud/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '3']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-			  })();
-			</script>
-			<!-- End Matomo Code -->
-      </div>
-    </footer>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
   </div>
 
+    </div>
+  </footer>
+
   
-  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1/dist/ribbon.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
@@ -672,8 +642,8 @@
 
 
 <script>
-if (document.querySelectorAll('pre.mermaid').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
     mermaid.init({
       theme    : 'forest',
       logLevel : 3,
@@ -686,10 +656,43 @@ if (document.querySelectorAll('pre.mermaid').length) {
 </script>
 
 
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
   
 
   
-  <script src="//cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({

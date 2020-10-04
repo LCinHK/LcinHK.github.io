@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Ta3ILTtLHz">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+
+  <meta name="description" content="花了几个小时，搞明白了一些东西">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端学习笔记——手机上的网页原生分享webshare">
+<meta property="og:url" content="https://blog.alevel.tech/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/index.html">
+<meta property="og:site_name" content="A级博客">
+<meta property="og:description" content="花了几个小时，搞明白了一些东西">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://forum.alevel.tech/imgur/jgDQcEj.jpg">
+<meta property="og:image" content="https://forum.alevel.tech/imgur/7bdHW78.gif">
+<meta property="article:published_time" content="2020-08-19T06:12:48.000Z">
+<meta property="article:modified_time" content="2020-08-19T06:12:48.000Z">
+<meta property="article:author" content="admin">
+<meta property="article:tag" content="干货">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://forum.alevel.tech/imgur/jgDQcEj.jpg">
+
+
+<link rel="canonical" href="https://blog.alevel.tech/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>前端学习笔记——手机上的网页原生分享webshare | A级博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158063420-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158063420-2');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
+<link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">A级博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">A级博、Alevel blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%88%E6%9E%9C"><span class="nav-number">1.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">3.</span> <span class="nav-text">学习</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#MDN%E7%9A%84%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81"><span class="nav-number">3.0.1.</span> <span class="nav-text">MDN的示例代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E8%B7%B5"><span class="nav-number">4.</span> <span class="nav-text">实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="admin"
+      src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
+  <p class="site-author-name" itemprop="name">admin</p>
+  <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0FsZXZlbHRlY2g=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Aleveltech"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;alevel.tech">alevel.tech</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/./about#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5" title=".&#x2F;about#友情链接">友情链接页</a>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 博客 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="6534377086"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
+      <meta itemprop="name" content="admin">
+      <meta itemprop="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="A级博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          前端学习笔记——手机上的网页原生分享webshare
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-08-19 14:12:48" itemprop="dateCreated datePublished" datetime="2020-08-19T14:12:48+08:00">2020-08-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="9480035167"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <blockquote class="blockquote-center">
+<p>花了几个小时，搞明白了一些东西 </p>
+
+</blockquote>
+<a id="more"></a>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>详见<span class="exturl" data-url="aHR0cHM6Ly9hbGV2ZWwudGVjaC8=">alevel.tech<i class="fa fa-external-link-alt"></i></span>。<br>当用户在手机上最新的主流浏览器上点击按钮时，可以实现调用手机原生分享功能↓<br><img data-src="https://forum.alevel.tech/imgur/jgDQcEj.jpg" alt="Imgur"></p>
+<p>但由于本API支持的浏览器主要为手机浏览器（电脑端除safari均不支持）所以还需要准备exception如下图↓<br><img data-src="https://forum.alevel.tech/imgur/7bdHW78.gif" alt="电脑效果"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为网页添加这个分享按钮的灵感来源于一个可以调用原生分享的插件。<br>alevel.tech所用的mdui前端框架虽然有javascript工具组件但是没有并没有包含Navigator.share()的使用方法或说明。于是笔者自行学习并为3个卡片添加了切实能用的分享按钮。<br>（备注：本人只是枚学生，轻喷……）</p>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><p>通过<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvQVBJL05hdmlnYXRvci9zaGFyZQ==">MDN<i class="fa fa-external-link-alt"></i></span>等文档的学习，总结出以下几个笔记要点：</p>
+<ol>
+<li>通过id的方式将javascript绑定至不同按钮</li>
+<li>onclick()点击后进行Navigator.share()分享。</li>
+<li>设置好要分享的title,URL,text等元素。暂时还没看懂files怎么传递。</li>
+<li>准备一个exception，防止不支持的浏览器点击后无反应。</li>
+</ol>
+<h4 id="MDN的示例代码"><a href="#MDN的示例代码" class="headerlink" title="MDN的示例代码"></a>MDN的示例代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> shareData = &#123;</span><br><span class="line">  title: <span class="string">&#x27;MDN&#x27;</span>,</span><br><span class="line">  text: <span class="string">&#x27;Learn web development on MDN!&#x27;</span>,</span><br><span class="line">  url: <span class="string">&#x27;https://developer.mozilla.org&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;button&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> resultPara = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.result&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Must be triggered some kind of &quot;user activation&quot;</span></span><br><span class="line">btn.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">await</span> navigator.share(shareData)</span><br><span class="line">    resultPara.textContent = <span class="string">&#x27;MDN shared successfully&#x27;</span></span><br><span class="line">  &#125; <span class="keyword">catch</span>(err) &#123;</span><br><span class="line">    resultPara.textContent = <span class="string">&#x27;Error: &#x27;</span> + err</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><p>MDN的示例代码将所有button元素进行绑定，不过在实践中需要绑定单独的按钮，所以改为使用getElementById来绑定单独不同的按钮。<br>此外，由于分享内容是固定的文本，可以省去新建shareData常量这一步并直接填入。<br>下面是我实际使用的javascript代码，轻喷……</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;shareForum&#x27;</span>).addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function">() =&gt;</span> &#123;<span class="keyword">try</span> &#123;</span><br><span class="line">    navigator.share(&#123;</span><br><span class="line">					title: <span class="string">&#x27;分享国交论坛&#x27;</span>,</span><br><span class="line">                    text: <span class="string">&#x27;国交论坛，言论自由。&#x27;</span>,</span><br><span class="line">                    url: <span class="string">&#x27;https://forum.alevel.tech&#x27;</span>,</span><br><span class="line">                &#125;)</span><br><span class="line">	    </span><br><span class="line">	&#125; <span class="keyword">catch</span>(err) &#123;alert(<span class="string">&#x27;当前所用浏览器没法分享&#x27;</span>);&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>其中，shareForum是一个button元素的id</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>今天 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9kb29kbGVzL3FpeGktZmVzdGl2YWwtMjAyMA==">google<i class="fa fa-external-link-alt"></i></span> 的七夕涂鸦使用的分享按钮并不支持原生分享，可见这个组件目前还不常用。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 香港轉數快(支援香港微信/支付寶/銀行APP)">
+        <span>香港轉數快(支援香港微信/支付寶/銀行APP)</span>
+      </div>
+      <div>
+        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 大陆微信/支付宝/云闪付/京东支付">
+        <span>大陆微信/支付宝/云闪付/京东支付</span>
+      </div>
+      <div>
+        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin 翼支付">
+        <span>翼支付</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>admin
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.alevel.tech/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/" title="前端学习笔记——手机上的网页原生分享webshare">https://blog.alevel.tech/2020/08/手机上的网页原生分享webshare/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%B9%B2%E8%B4%A7/" rel="tag"># 干货</a>
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/07/flarum%E6%90%AC%E8%BF%81%E8%AE%B0/" rel="prev" title="flarum搬迁记">
+                  <i class="fa fa-chevron-left"></i> flarum搬迁记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/08/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/" rel="next" title="随笔: 网络二线关">
+                  随笔: 网络二线关 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">admin</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/2020/08/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E5%8E%9F%E7%94%9F%E5%88%86%E4%BA%ABwebshare/',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b5ffcfc9a1ae16735def',
+      clientSecret: '960e9077342e24f12a87775fe8d18eea1cd0e72b',
+      repo        : 'AlevelBlogComments',
+      owner       : 'LCinHK',
+      admin       : ['LCinHK'],
+      id          : 'd673440b0f3daa8abb8a1eb9e5c0110c',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

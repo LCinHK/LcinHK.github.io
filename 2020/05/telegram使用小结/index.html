@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Ta3ILTtLHz">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+
+  <meta name="description" content="一旦熟悉用法，telegram的开放性和强大性会让人爱不释手   （本文不介绍telegram的下载安装等，此类文章很多）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="telegram使用小结">
+<meta property="og:url" content="https://blog.alevel.tech/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/index.html">
+<meta property="og:site_name" content="A级博客">
+<meta property="og:description" content="一旦熟悉用法，telegram的开放性和强大性会让人爱不释手   （本文不介绍telegram的下载安装等，此类文章很多）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/15/tc6I4Nwpk8vMLx7.png">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E5%AE%98%E6%96%B9%E6%B8%A0%E9%81%93.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%96%B0%E9%97%BB%E9%A2%91%E9%81%93.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E9%80%BC%E5%93%A5%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%89%93%E7%89%8C.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/flowerRSS.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E4%BF%9D%E5%AD%98%E6%96%87%E7%AB%A0.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%B2%B9%E7%AE%A1%E4%B8%8B%E8%BD%BD.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E4%BF%9D%E5%AD%98%E6%96%87%E4%BB%B6.jpg?download=1">
+<meta property="og:image" content="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE.jpg?download=1">
+<meta property="article:published_time" content="2020-05-15T01:14:00.000Z">
+<meta property="article:modified_time" content="2020-05-15T01:14:00.000Z">
+<meta property="article:author" content="admin">
+<meta property="article:tag" content="干货">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/15/tc6I4Nwpk8vMLx7.png">
+
+
+<link rel="canonical" href="https://blog.alevel.tech/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>telegram使用小结 | A级博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158063420-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158063420-2');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
+<link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">A级博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">A级博、Alevel blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%EF%BC%8C%E8%8E%B7%E5%8F%96%E6%B8%A0%E9%81%93"><span class="nav-number">1.</span> <span class="nav-text">一，获取渠道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%EF%BC%8C%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">二，常用功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E9%97%BB%E6%8E%A8%E9%80%81"><span class="nav-number">2.1.</span> <span class="nav-text">新闻推送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB"><span class="nav-number">2.2.</span> <span class="nav-text">资源分享</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%A4%E8%81%8A%E6%89%93%E7%89%8C"><span class="nav-number">2.3.</span> <span class="nav-text">群聊打牌</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RSS%E8%AE%A2%E9%98%85"><span class="nav-number">2.4.</span> <span class="nav-text">RSS订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98%E6%96%87%E7%AB%A0"><span class="nav-number">2.5.</span> <span class="nav-text">保存文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%BD%B1%E7%89%87"><span class="nav-number">2.6.</span> <span class="nav-text">下载影片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%9C%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%A9%E6%89%8B%E2%80%9D%E2%80%94%E2%80%94%E6%B0%B8%E4%B9%85%E4%BF%9D%E5%AD%98%E4%BB%BB%E4%BD%95%E4%BF%A1%E6%81%AF"><span class="nav-number">2.7.</span> <span class="nav-text">“文件传输助手”——永久保存任何信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E2%80%94%E2%80%94%E4%BB%A3%E6%9B%BF%E9%9F%B3%E4%B9%90APP"><span class="nav-number">2.8.</span> <span class="nav-text">音乐播放——代替音乐APP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%EF%BC%8C%E5%90%8E%E8%AE%B0"><span class="nav-number">3.</span> <span class="nav-text">三，后记</span></a></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="admin"
+      src="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
+  <p class="site-author-name" itemprop="name">admin</p>
+  <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0FsZXZlbHRlY2g=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Aleveltech"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;alevel.tech">alevel.tech</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/./about#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5" title=".&#x2F;about#友情链接">友情链接页</a>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 博客 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="6534377086"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/49670244?s=460&v=4">
+      <meta itemprop="name" content="admin">
+      <meta itemprop="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="A级博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          telegram使用小结
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-05-15 09:14:00" itemprop="dateCreated datePublished" datetime="2020-05-15T09:14:00+08:00">2020-05-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="9480035167"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <blockquote class="blockquote-center">
+<p>一旦熟悉用法，telegram的开放性和强大性会让人爱不释手</p>
+
+</blockquote>
+<p>（本文不介绍telegram的下载安装等，此类文章很多）</p>
+<a id="more"></a>
+<h2 id="一，获取渠道"><a href="#一，获取渠道" class="headerlink" title="一，获取渠道"></a>一，获取渠道</h2><p>telegram的全平台支持非常完美，可以通过最正规的渠道方便地获取到。这里说个可能有些人不知道的。<br><img data-src="https://i.loli.net/2020/05/15/tc6I4Nwpk8vMLx7.png" alt="windows10"><br><strong>Windows 10 商店</strong><br><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E5%AE%98%E6%96%B9%E6%B8%A0%E9%81%93.jpg?download=1" alt="各大"><br>各大平台，<span class="exturl" data-url="aHR0cHM6Ly90ZWxlZ3JhbS5vcmcvYXBwcw==">应有尽有<i class="fa fa-external-link-alt"></i></span></p>
+<video src="https://cloud.alevel.tech/d/mVJPbX5A/q/videos/telegram%E6%8E%A8%E5%B9%BF.MP4?download=1" preload="metadata" controls playsinline poster="">Sorry, your browser does not support the video tag.</video>
+<h2 id="二，常用功能"><a href="#二，常用功能" class="headerlink" title="二，常用功能"></a>二，常用功能</h2><p>虽然telegram以加密即时通讯和大人数群聊为主打功能，但实际使用中还有很多用法。本文主要是列举一些站长个人体验中发现的一些用法。</p>
+<h3 id="新闻推送"><a href="#新闻推送" class="headerlink" title="新闻推送"></a>新闻推送</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%96%B0%E9%97%BB%E9%A2%91%E9%81%93.jpg?download=1" alt="新闻频道"><br>telegram上有一大批官方或通过RSS制作的新闻推送频道，一般可以通过Instant View功能在手机上方便地查看。</p>
+<h3 id="资源分享"><a href="#资源分享" class="headerlink" title="资源分享"></a>资源分享</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E9%80%BC%E5%93%A5%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB.jpg?download=1" alt="逼哥音乐分享"><br>telegram上有很多专门用于分享资源的频道，包括官方推出的<span class="exturl" data-url="aHR0cHM6Ly90Lm1lL1RBbmRyb2lkQVBL">apk发布频道<i class="fa fa-external-link-alt"></i></span>。此外，因为谁都可以轻易地直接建立一个频道，个人也可以用来永久保存一些（公开或半公开）的资源，比如趣图、视频、和一些在某些IM软件几天没读消息就会被删除的文件。</p>
+<h3 id="群聊打牌"><a href="#群聊打牌" class="headerlink" title="群聊打牌"></a>群聊打牌</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%89%93%E7%89%8C.jpg?download=1" alt="打牌"><br>可以通过一些bot在群里打牌！telegram的开放API提供了无限的可能性，包括各式各样的游戏bot。</p>
+<h3 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/flowerRSS.jpg?download=1" alt="flowerRSS"><br>厉害的地方来了！这款通过telegram和telegra.ph制作的RSSbot可以提供带完整内容的RSS订阅！在手机上可以通过instantview功能查看。此外还有一类更新速度快但不提供内容的RSSbot，如 @NodeRSS_bot</p>
+<h3 id="保存文章"><a href="#保存文章" class="headerlink" title="保存文章"></a>保存文章</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E4%BF%9D%E5%AD%98%E6%96%87%E7%AB%A0.jpg?download=1" alt="保存文章"><br>通过telegra.ph的开放性可以制作出许多与文章有关的功能，比如这个bot可以将公网文章保存在telegra.ph上以使用Instant View功能。除了方便在telegram内保存和转发文章，也方便备份一些可能会删除的文字。</p>
+<h3 id="下载影片"><a href="#下载影片" class="headerlink" title="下载影片"></a>下载影片</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E6%B2%B9%E7%AE%A1%E4%B8%8B%E8%BD%BD.jpg?download=1" alt="油管下载"><br>可以通过分享链接下载一些知名网站的影片，而这对于很多人收到朋友分享的链接时非常有效。</p>
+<h3 id="“文件传输助手”——永久保存任何信息"><a href="#“文件传输助手”——永久保存任何信息" class="headerlink" title="“文件传输助手”——永久保存任何信息"></a>“文件传输助手”——<strong>永久保存任何信息</strong></h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E4%BF%9D%E5%AD%98%E6%96%87%E4%BB%B6.jpg?download=1" alt="文件保存"><br><strong>重点来了！</strong>和某IM软件不同的是，telegram提供的Saved Message功能可以是个人<strong>永久保存</strong>所有文字、音频、影片、文件，<strong>不限大小</strong>。相比某些网盘和IM软件，telegram上存储文件是加密的，且无需担心被审核。</p>
+<h3 id="音乐播放——代替音乐APP"><a href="#音乐播放——代替音乐APP" class="headerlink" title="音乐播放——代替音乐APP"></a>音乐播放——代替音乐APP</h3><p><img data-src="https://cloud.alevel.tech/d/mVJPbX5A/q/images/tg%E6%96%87/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE.jpg?download=1" alt="播放音乐"><br>据传有很多人因为太过方便而经常通过telegram听歌。事实上确实可以通过将音频文件传进telegram实现甚至<strong>”歌单“效果</strong>。对很多人来说，这足以替代音乐APP。  </p>
+<h2 id="三，后记"><a href="#三，后记" class="headerlink" title="三，后记"></a>三，后记</h2><p>实际上笔者所发现的也只是telegram众多用法中的部分，因此欢迎在国交论坛等地做任何补充。<br>本文所提到的所有频道与bot  </p>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="right">telegram名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">BBC中文</td>
+<td align="right">@bbczhongwen_rss</td>
+</tr>
+<tr>
+<td align="center">逼哥音樂分享</td>
+<td align="right">@lizhiBB</td>
+</tr>
+<tr>
+<td align="center">群聊打牌</td>
+<td align="right">@unobot</td>
+</tr>
+<tr>
+<td align="center">内容RSS</td>
+<td align="right">@RSSFlowBot</td>
+</tr>
+<tr>
+<td align="center">保存文章</td>
+<td align="right">@CorsaBot</td>
+</tr>
+<tr>
+<td align="center">YouTube下载</td>
+<td align="right">@utubebot</td>
+</tr>
+</tbody></table>
+<p>除此之外还有许多<span class="exturl" data-url="aHR0cHM6Ly9jb25nY29uZzA4MDYuZ2l0aHViLmlvLzIwMTgvMDQvMjQvVGVsZWdyYW0v">好用的频道与bot<i class="fa fa-external-link-alt"></i></span>。</p>
+<div class="text-center"><a class="btn" target="_blank" rel="noopener" href="https://telegram.org" title="点此访问telegram官网"><i class="fab fa-telegram fa-fw fa-lg"></i>telegram官网</a></div>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 香港轉數快(支援香港微信/支付寶/銀行APP)">
+        <span>香港轉數快(支援香港微信/支付寶/銀行APP)</span>
+      </div>
+      <div>
+        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 大陆微信/支付宝/云闪付/京东支付">
+        <span>大陆微信/支付宝/云闪付/京东支付</span>
+      </div>
+      <div>
+        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin 翼支付">
+        <span>翼支付</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>admin
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.alevel.tech/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/" title="telegram使用小结">https://blog.alevel.tech/2020/05/telegram使用小结/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%B9%B2%E8%B4%A7/" rel="tag"># 干货</a>
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/04/%E6%8B%92%E7%BB%9D%E7%99%BE%E5%BA%A6%EF%BC%8C%E9%87%8D%E8%BF%94BT%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E7%A7%8D%E5%AD%90%E6%95%99%E5%AD%A6/" rel="prev" title="拒绝百度，重返BT——最新种子教学">
+                  <i class="fa fa-chevron-left"></i> 拒绝百度，重返BT——最新种子教学
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/05/steam%E4%B8%8A%E6%96%B0CDN%E4%BA%86/" rel="next" title="steam上新CDN了">
+                  steam上新CDN了 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">admin</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/2020/05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b5ffcfc9a1ae16735def',
+      clientSecret: '960e9077342e24f12a87775fe8d18eea1cd0e72b',
+      repo        : 'AlevelBlogComments',
+      owner       : 'LCinHK',
+      admin       : ['LCinHK'],
+      id          : 'c14e56f2a0e3fda03178faf96bed7427',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
