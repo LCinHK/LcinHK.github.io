@@ -6,7 +6,7 @@
   <link href="https://blog.alevel.tech/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2020-09-21T01:49:31.000Z</updated>
+  <updated>2020-10-13T00:48:00.000Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -17,6 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开启试验性telegram Instant View功能</title>
+    <link href="https://blog.alevel.tech/2020/10/%E5%BC%80%E5%90%AF%E8%AF%95%E9%AA%8C%E6%80%A7telegram-Instant-View%E5%8A%9F%E8%83%BD/"/>
+    <id>https://blog.alevel.tech/2020/10/%E5%BC%80%E5%90%AF%E8%AF%95%E9%AA%8C%E6%80%A7telegram-Instant-View%E5%8A%9F%E8%83%BD/</id>
+    <published>2020-10-13T00:48:00.000Z</published>
+    <updated>2020-10-13T00:48:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;正如同我&lt;a href=&quot;../../05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93&quot;&gt;之前&lt;/a&gt;介绍过，Telegram的Instant View功能非常方便。为博客加入此功能可能招到更多阅览量。本文理论上适用于所有NEXT主题hexo博客进行参考。&lt;/p&gt;
+&lt;div class=&quot;text-center&quot;&gt; &lt;a class=&quot;btn&quot; href=&quot;https://tx.me&quot; title=&quot;telegram官网&quot;&gt;&lt;i class=&quot;fab fa-telegram fa-fw fa-lg&quot;&gt;&lt;/i&gt;telegram官网&lt;/a&gt; &lt;/div&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HEXO" scheme="https://blog.alevel.tech/tags/HEXO/"/>
+    
+    <category term="telegram" scheme="https://blog.alevel.tech/tags/telegram/"/>
+    
+  </entry>
+  
+  <entry>
     <title>互联网韭菜的自我修养</title>
     <link href="https://blog.alevel.tech/2020/09/%E4%BA%92%E8%81%94%E7%BD%91%E9%9F%AD%E8%8F%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B4%A0%E5%85%BB/"/>
     <id>https://blog.alevel.tech/2020/09/%E4%BA%92%E8%81%94%E7%BD%91%E9%9F%AD%E8%8F%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B4%A0%E5%85%BB/</id>
@@ -25,7 +51,7 @@
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-&lt;p&gt;&lt;del&gt;社会&lt;/del&gt;网络韭菜三大件，火狐&lt;a href=&quot;../../../../2020/05/15/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/&quot;&gt;电报&lt;/a&gt;n++。本文简要分享下个人网络生活惯用技巧 &lt;/p&gt;
+&lt;p&gt;&lt;del&gt;社会&lt;/del&gt;网络韭菜三大件，火狐&lt;a href=&quot;../../05/telegram%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/&quot;&gt;电报&lt;/a&gt;n++。本文简要分享下个人网络生活惯用技巧 &lt;/p&gt;
 
 &lt;/blockquote&gt;</summary>
     
@@ -34,7 +60,15 @@
     <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="日常" scheme="https://blog.alevel.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    <category term="网络" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="韭菜" scheme="https://blog.alevel.tech/tags/%E9%9F%AD%E8%8F%9C/"/>
+    
+    <category term="互联网" scheme="https://blog.alevel.tech/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+    <category term="firefox" scheme="https://blog.alevel.tech/tags/firefox/"/>
+    
+    <category term="chrome" scheme="https://blog.alevel.tech/tags/chrome/"/>
     
   </entry>
   
@@ -57,9 +91,25 @@
     <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
     
     
+    <category term="网络" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网" scheme="https://blog.alevel.tech/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
     <category term="随笔" scheme="https://blog.alevel.tech/tags/%E9%9A%8F%E7%AC%94/"/>
     
     <category term="杂文" scheme="https://blog.alevel.tech/tags/%E6%9D%82%E6%96%87/"/>
+    
+    <category term="中国" scheme="https://blog.alevel.tech/tags/%E4%B8%AD%E5%9B%BD/"/>
+    
+    <category term="二线关" scheme="https://blog.alevel.tech/tags/%E4%BA%8C%E7%BA%BF%E5%85%B3/"/>
+    
+    <category term="特区" scheme="https://blog.alevel.tech/tags/%E7%89%B9%E5%8C%BA/"/>
+    
+    <category term="web3.0" scheme="https://blog.alevel.tech/tags/web3-0/"/>
+    
+    <category term="互联网+" scheme="https://blog.alevel.tech/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+    <category term="网络二线关" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3/"/>
     
   </entry>
   
@@ -87,6 +137,22 @@
     
     <category term="学习" scheme="https://blog.alevel.tech/tags/%E5%AD%A6%E4%B9%A0/"/>
     
+    <category term="HTML" scheme="https://blog.alevel.tech/tags/HTML/"/>
+    
+    <category term="Andriod" scheme="https://blog.alevel.tech/tags/Andriod/"/>
+    
+    <category term="安卓" scheme="https://blog.alevel.tech/tags/%E5%AE%89%E5%8D%93/"/>
+    
+    <category term="分享" scheme="https://blog.alevel.tech/tags/%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="Native" scheme="https://blog.alevel.tech/tags/Native/"/>
+    
+    <category term="原生" scheme="https://blog.alevel.tech/tags/%E5%8E%9F%E7%94%9F/"/>
+    
+    <category term="HTML5" scheme="https://blog.alevel.tech/tags/HTML5/"/>
+    
+    <category term="Javascript" scheme="https://blog.alevel.tech/tags/Javascript/"/>
+    
   </entry>
   
   <entry>
@@ -111,6 +177,12 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="flarum" scheme="https://blog.alevel.tech/tags/flarum/"/>
+    
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="日记" scheme="https://blog.alevel.tech/tags/%E6%97%A5%E8%AE%B0/"/>
+    
   </entry>
   
   <entry>
@@ -134,6 +206,16 @@
     <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="flarum" scheme="https://blog.alevel.tech/tags/flarum/"/>
+    
+    <category term="Imgur" scheme="https://blog.alevel.tech/tags/Imgur/"/>
+    
+    <category term="上传" scheme="https://blog.alevel.tech/tags/%E4%B8%8A%E4%BC%A0/"/>
+    
+    <category term="反代" scheme="https://blog.alevel.tech/tags/%E5%8F%8D%E4%BB%A3/"/>
+    
+    <category term="nginx" scheme="https://blog.alevel.tech/tags/nginx/"/>
     
   </entry>
   
@@ -160,6 +242,20 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="wordpress" scheme="https://blog.alevel.tech/tags/wordpress/"/>
+    
+    <category term="HEXO" scheme="https://blog.alevel.tech/tags/HEXO/"/>
+    
+    <category term="图片" scheme="https://blog.alevel.tech/tags/%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="迁移" scheme="https://blog.alevel.tech/tags/%E8%BF%81%E7%A7%BB/"/>
+    
+    <category term="静态博客" scheme="https://blog.alevel.tech/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="blog" scheme="https://blog.alevel.tech/tags/blog/"/>
+    
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
   </entry>
   
   <entry>
@@ -183,9 +279,19 @@
     
     <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
     
+    <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    
+    <category term="网络" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%BB%9C/"/>
+    
     <category term="新闻" scheme="https://blog.alevel.tech/tags/%E6%96%B0%E9%97%BB/"/>
     
-    <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
+    <category term="pinyuncloud" scheme="https://blog.alevel.tech/tags/pinyuncloud/"/>
+    
+    <category term="steam" scheme="https://blog.alevel.tech/tags/steam/"/>
+    
+    <category term="CDN" scheme="https://blog.alevel.tech/tags/CDN/"/>
+    
+    <category term="pinyuncloud.com" scheme="https://blog.alevel.tech/tags/pinyuncloud-com/"/>
     
   </entry>
   
@@ -212,6 +318,12 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="telegram" scheme="https://blog.alevel.tech/tags/telegram/"/>
+    
+    <category term="网盘" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%9B%98/"/>
+    
+    <category term="RSS" scheme="https://blog.alevel.tech/tags/RSS/"/>
+    
   </entry>
   
   <entry>
@@ -228,10 +340,16 @@
     
     
     
+    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
     
     <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="种子" scheme="https://blog.alevel.tech/tags/%E7%A7%8D%E5%AD%90/"/>
+    
+    <category term="BT" scheme="https://blog.alevel.tech/tags/BT/"/>
     
   </entry>
   
@@ -248,6 +366,8 @@
 &lt;/blockquote&gt;</summary>
     
     
+    
+    <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
     
     
     <category term="随笔" scheme="https://blog.alevel.tech/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -291,6 +411,8 @@
     
     
     <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="PGP" scheme="https://blog.alevel.tech/tags/PGP/"/>
     
@@ -355,6 +477,8 @@
     <summary type="html">&lt;h2 id=&quot;生日快乐&quot;&gt;&lt;a href=&quot;#生日快乐&quot; class=&quot;headerlink&quot; title=&quot;生日快乐&quot;&gt;&lt;/a&gt;生日快乐&lt;/h2&gt;</summary>
     
     
+    
+    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
