@@ -26,19 +26,19 @@
     var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
-<meta property="og:type" content="website">
-<meta property="og:title" content="A级博客">
-<meta property="og:url" content="https://blog.alevel.tech/tags/firefox/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="telegram频道">
+<meta property="og:url" content="https://blog.alevel.tech/TelegramChannel/index.html">
 <meta property="og:site_name" content="A级博客">
-<meta property="og:description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-21T12:56:57.000Z">
+<meta property="article:modified_time" content="2020-05-21T12:56:57.000Z">
 <meta property="article:author" content="admin">
 <meta property="article:tag" content="A级博客, Alevel blog, 技术博客, 技术, 技巧, 谷歌">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.alevel.tech/tags/firefox/">
+<link rel="canonical" href="https://blog.alevel.tech/TelegramChannel/">
 
 
 <script class="page-configurations">
@@ -51,7 +51,8 @@
   };
 </script>
 
-  <title>标签: firefox | A级博客</title>
+  <title>telegram频道 | A级博客
+</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158063420-2"></script>
     <script>
@@ -308,58 +309,67 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner page posts-expand">
       
+  
+  
 
       
 
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">telegram频道
+</h1>
+
+<div class="post-meta-container">
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">firefox
-          <small>标签</small>
-        </h2>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <iframe style="position: relative;" src="https://tg.alevel.workers.dev/" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>
       </div>
-
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+      
+      
     </div>
+    
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-09-21T09:49:00+08:00"
-              content="2020-09-21">
-          09-21
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/09/%E4%BA%92%E8%81%94%E7%BD%91%E9%9F%AD%E8%8F%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B4%A0%E5%85%BB/" itemprop="url">
-            <span itemprop="name">互联网韭菜的自我修养</span>
-          </a>
-      </div>
 
       
-    </header>
-  </article>
-
-    </div>
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-discussbot">discussbot</a></li>
+            <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane discussbot" id="comment-discussbot">
+              
+  
+  <div class="comments" id="discussbot-container">
+  <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="3TSf1W2d" data-limit="5" data-color="2BA245" data-dislikes="1" data-outlined="0"></script>
   </div>
   
   
-  
-
-  
-
-
-
-      
+            </div>
+            <div class="tab-pane gitalk" id="comment-gitalk">
+              <div class="comments" id="gitalk-container"></div>
+            </div>
+        </div>
+      </div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -533,11 +543,30 @@ if (document.querySelectorAll('.mermaid').length) {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/tags/firefox/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/TelegramChannel/',]
       });
       });
   </script>
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b5ffcfc9a1ae16735def',
+      clientSecret: '960e9077342e24f12a87775fe8d18eea1cd0e72b',
+      repo        : 'AlevelBlogComments',
+      owner       : 'LCinHK',
+      admin       : ['LCinHK'],
+      id          : 'c2eb2e99a0a21e6645e494997b321db2',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
