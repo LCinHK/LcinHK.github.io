@@ -6,7 +6,7 @@
   <link href="https://blog.alevel.tech/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2020-10-22T01:28:00.000Z</updated>
+  <updated>2020-11-29T10:24:00.000Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>飞行人生——断网一周体会</title>
+    <link href="https://blog.alevel.tech/2020/11/%E9%A3%9E%E8%A1%8C%E4%BA%BA%E7%94%9F%E2%80%94%E2%80%94%E6%96%AD%E7%BD%91%E4%B8%80%E5%91%A8%E4%BD%93%E4%BC%9A/"/>
+    <id>https://blog.alevel.tech/2020/11/%E9%A3%9E%E8%A1%8C%E4%BA%BA%E7%94%9F%E2%80%94%E2%80%94%E6%96%AD%E7%BD%91%E4%B8%80%E5%91%A8%E4%BD%93%E4%BC%9A/</id>
+    <published>2020-11-29T10:24:00.000Z</published>
+    <updated>2020-11-29T10:24:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;将电子设备调成飞行模式一个星期，会有什么产出和意想不到的效果？笔者的周记经验谈&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;2020是一个电子时代。我们有5G通信，高性能手机和各种设备。甚至，&lt;a href=&quot;../../08/%E9%9A%8F%E7%AC%94-%E7%BD%91%E7%BB%9C%E4%BA%8C%E7%BA%BF%E5%85%B3#%E8%B5%B0%E8%BF%9B%E6%96%B0%E6%97%B6%E4%BB%A3&quot;&gt;某些网站&lt;/a&gt;也强行关停桌面端业务并强迫你用手机端。&lt;br&gt;在此，&lt;del&gt;作为一个21世纪悲惨应考人&lt;/del&gt;我尝试通过切断【手机——X——互联网】的连结来实现专注。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="网络" scheme="https://blog.alevel.tech/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网" scheme="https://blog.alevel.tech/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+    <category term="随笔" scheme="https://blog.alevel.tech/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="杂文" scheme="https://blog.alevel.tech/tags/%E6%9D%82%E6%96%87/"/>
+    
+    <category term="飞行模式" scheme="https://blog.alevel.tech/tags/%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="flight mode" scheme="https://blog.alevel.tech/tags/flight-mode/"/>
+    
+  </entry>
   
   <entry>
     <title>合法上网小技巧</title>
@@ -203,9 +236,9 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="flarum" scheme="https://blog.alevel.tech/tags/flarum/"/>
+    
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="日记" scheme="https://blog.alevel.tech/tags/%E6%97%A5%E8%AE%B0/"/>
     
@@ -268,6 +301,8 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
     <category term="wordpress" scheme="https://blog.alevel.tech/tags/wordpress/"/>
     
     <category term="HEXO" scheme="https://blog.alevel.tech/tags/HEXO/"/>
@@ -279,8 +314,6 @@
     <category term="静态博客" scheme="https://blog.alevel.tech/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="blog" scheme="https://blog.alevel.tech/tags/blog/"/>
-    
-    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -332,8 +365,7 @@
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
 &lt;p&gt;一旦熟悉用法，telegram的开放性和强大性会让人爱不释手&lt;/p&gt;
 
-&lt;/blockquote&gt;
-&lt;p&gt;（本文不介绍telegram的下载安装等，此类文章很多）&lt;/p&gt;</summary>
+&lt;/blockquote&gt;</summary>
     
     
     
@@ -550,31 +582,6 @@
     <category term="baidu" scheme="https://blog.alevel.tech/tags/baidu/"/>
     
     <category term="google" scheme="https://blog.alevel.tech/tags/google/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>炒银一时爽</title>
-    <link href="https://blog.alevel.tech/2019/09/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/"/>
-    <id>https://blog.alevel.tech/2019/09/%E7%82%92%E9%93%B6%E4%B8%80%E6%97%B6%E7%88%BD/</id>
-    <published>2019-09-07T03:14:17.000Z</published>
-    <updated>2019-09-07T03:14:17.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;炒银一时爽，亏损火葬场&quot;&gt;&lt;a href=&quot;#炒银一时爽，亏损火葬场&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
-    
-    
-    <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
     
   </entry>
   
