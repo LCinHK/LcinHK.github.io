@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN,zh-HK,en,ja,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Ta3ILTtLHz">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+
+  <meta name="description" content="这比当时安装flarum坑多了……">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Misskey的安装与天坑">
+<meta property="og:url" content="https://blog.alevel.tech/2021/01/Misskey%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%A4%A9%E5%9D%91/index.html">
+<meta property="og:site_name" content="A级博客">
+<meta property="og:description" content="这比当时安装flarum坑多了……">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.ax1x.com/2021/01/20/sRDyYF.png">
+<meta property="og:image" content="https://blog.alevel.tech/images/%E6%A8%A1%E5%9D%97.png">
+<meta property="og:image" content="https://s3.ax1x.com/2021/01/20/sR6oDA.png">
+<meta property="og:image" content="https://s3.ax1x.com/2021/01/20/sRcozF.png">
+<meta property="og:image" content="https://s3.ax1x.com/2021/01/20/sWnY4O.png">
+<meta property="og:image" content="https://s3.ax1x.com/2021/01/20/sWuSVx.png">
+<meta property="article:published_time" content="2021-01-15T02:42:00.000Z">
+<meta property="article:modified_time" content="2021-01-15T02:42:00.000Z">
+<meta property="article:author" content="admin">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="misskey">
+<meta property="article:tag" content="分布式">
+<meta property="article:tag" content="互联网">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="社交媒体">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.ax1x.com/2021/01/20/sRDyYF.png">
+
+
+<link rel="canonical" href="https://blog.alevel.tech/2021/01/Misskey%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%A4%A9%E5%9D%91/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Misskey的安装与天坑 | A级博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158063420-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158063420-2');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
+<link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">A级博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">A级博、Alevel blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">安装过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%A7%E9%80%8F%E9%A2%84%E8%AD%A6%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">剧透预警：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E2%80%94%E2%80%94%E5%9C%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85misskey"><span class="nav-number">1.1.</span> <span class="nav-text">环境——在宝塔面板安装misskey</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">1.2.</span> <span class="nav-text">安装与配置环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E4%B8%BB%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.3.</span> <span class="nav-text">处理主程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BB%E7%A8%8B%E5%BA%8F%E5%BC%80%E8%B7%91"><span class="nav-number">1.3.1.</span> <span class="nav-text">主程序开跑</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%90%A5%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">运营与使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%A4%A7%E5%9D%91"><span class="nav-number">3.</span> <span class="nav-text">其他大坑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%84%9F%E6%83%B3"><span class="nav-number">4.</span> <span class="nav-text">感想</span></a></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="admin"
+      src="https://avatars1.githubusercontent.com/u/49670244?s=460&v=4">
+  <p class="site-author-name" itemprop="name">admin</p>
+  <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">61</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90eC5tZS9JbnN0YW50VGVjaFRpcHM=" title="Telegram → https:&#x2F;&#x2F;tx.me&#x2F;InstantTechTips"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;alevel.tech">alevel.tech</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/./about#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5" title=".&#x2F;about#友情链接">友情链接页</a>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 博客 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="6534377086"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2021/01/Misskey%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%A4%A9%E5%9D%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/49670244?s=460&v=4">
+      <meta itemprop="name" content="admin">
+      <meta itemprop="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="A级博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Misskey的安装与天坑
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-15 10:42:00" itemprop="dateCreated datePublished" datetime="2021-01-15T10:42:00+08:00">2021-01-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="9480035167"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <blockquote class="blockquote-center">
+<p>这比当时安装flarum坑多了……</p>
+
+</blockquote>
+<a id="more"></a>
+<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>安装过程就遇到了海量的坑点……</p>
+<div class="note danger"><h4 id="剧透预警："><a href="#剧透预警：" class="headerlink" title="剧透预警："></a>剧透预警：</h4><p>为了您的方便和安全，还是<strong>减少</strong>使用宝塔面板吧……</p>
+</div>
+
+<h3 id="环境——在宝塔面板安装misskey"><a href="#环境——在宝塔面板安装misskey" class="headerlink" title="环境——在宝塔面板安装misskey"></a>环境——在宝塔面板安装misskey</h3><p>根据官方要求，建议宝塔用户直接在软件商店配置安装这三个<br><img data-src="https://s3.ax1x.com/2021/01/20/sRDyYF.png" alt="环境"></p>
+<p>要点：</p>
+<ul>
+<li>关掉数据库的日志功能，否则会迅速吃干净服务器空间</li>
+<li>redis记得开密码并限定本地访问（端口也不要开）。过去出现过太多案例了。</li>
+<li>PM2管理器只是为了方便装环境，实际运行时还是走命令行比较好。</li>
+</ul>
+<p>之后就是按照<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3N5dWlsby9taXNza2V5L2Jsb2IvZGV2ZWxvcC9kb2NzL3NldHVwLnpoLm1k">官方流程<i class="fa fa-external-link-alt"></i></span>在服务器上准备一个misskey用户（用root跑多半……会有安全问题吧）进行搭建了。</p>
+<h3 id="安装与配置环境"><a href="#安装与配置环境" class="headerlink" title="安装与配置环境"></a>安装与配置环境</h3><p>其实就是按部就班。首先通过宝塔的PM2管理器可以直接安装yarn模块<br><img data-src="/images/%E6%A8%A1%E5%9D%97.png" alt="模块安装"></p>
+<p>同理，PostgreSQL和redis数据库主程序也可以通过面板安装特定版本（对于misskey来说最新版即可）<br><img data-src="https://s3.ax1x.com/2021/01/20/sR6oDA.png" alt="数据库安装"></p>
+<p>后面遵循本站为友情链接的<span class="exturl" data-url="aHR0cHM6Ly9kb2djcmFmdC50b3AvYXJjaGl2ZXMvMTQ1LyN0b2NfMQ==">dogcraft大神<i class="fa fa-external-link-alt"></i></span>的流程配置数据库即可，下面说说笔者遇到的第一个<strong>天坑</strong>：</p>
+<ol>
+<li>宝塔面板的添加数据库功能是废的（如图所示的是不能使用的），需要手动添加。<br><img data-src="https://s3.ax1x.com/2021/01/20/sRcozF.png" alt="不要用这个"></li>
+<li>和MySQL相比，postgresql的使用过于非人性化。不仅需要切换到postgres用户，而且使用上也很糟心……<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -i su postgres</span><br><span class="line">/www/server/pgsql/bin/psql  👈对，宝塔安装版不会自动添加进系统path还需要输入完整路径</span><br></pre></td></tr></table></figure>
+除此之外，作为正常界面的<code>postgres=#</code>和非正常界面的<code>postgres-#</code>长得也太像了吧！而MySQL在没打分号等时候是直接起一空行的。</li>
+<li>再次提醒要小心日志挤爆空间  </li>
+</ol>
+<h3 id="处理主程序"><a href="#处理主程序" class="headerlink" title="处理主程序"></a>处理主程序</h3><p>根据<span class="exturl" data-url="aHR0cHM6Ly9qb2luLm1pc3NrZXkucGFnZS9lbi93aWtpL2RldmVsb3BlcnMvaW5zdGFsbGF0aW9uL2F3cyNNaXNza2V5JUUzJTgxJUFFJUUzJTgzJTkzJUUzJTgzJUFCJUUzJTgzJTg5">官方教程<i class="fa fa-external-link-alt"></i></span>，我们可以在处理速度快的电脑上先编译，编译完了再把主程序上传到misskey用户的目录（图方便）。对于新安装来说没有太大问题，只有几点要注意：</p>
+<ul>
+<li>Windows下编译会比较麻烦，需要安装的webpack包在windows上倾向调用臃肿的visual studio进行编译……如果出现这个错误而你又不想用visual studio的话建议按照错误提示给的链接上去看，有不用的方法。</li>
+<li>.config/default.yml设置要正确。域名提前做好解析，数据库用户名和密码也要对上</li>
+</ul>
+<p>接下来是第二个<strong>天坑</strong>：文件夹的权限问题。笔者在第一次装的时候不停遇到<code>ERR 1 [api] Error: EACCES: permission denied, copyfile </code>问题无法上传文件。老实说，这个错误信息已经告诉了问题出在权限上，不过当时被ls -al返回的信息误判了。实际上即使/misskey文件夹下的目录，如果是用root用户创建（比如上传）的也会有权限问题。  </p>
+<p>解决方案：<code>chgrp -R misskey misskey</code>和<code>chown -R misskey misskey</code>.</p>
+<h4 id="主程序开跑"><a href="#主程序开跑" class="headerlink" title="主程序开跑"></a>主程序开跑</h4><p>意外地简单，就是几行命令。因为systemd用不了，所以笔者选择的方案是开个screen运行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">screen -S misskey</span><br><span class="line"><span class="built_in">cd</span> /home/misskey/misskey  👈理论上来说，如果严格按照官方建议的话这里你应该在使用misskey用户，所以用相对路径的~/misskey更好</span><br><span class="line">NODE_ENV=production npm start</span><br></pre></td></tr></table></figure>
+<p>理论上，在你处理完主程序后这里就可以关掉了。screen会一直跑下去，并且只要不关机随时可以通过<code>screen -r misskey</code>来查看（先切换到你在跑screen的那个用户misskey）</p>
+<h2 id="运营与使用"><a href="#运营与使用" class="headerlink" title="运营与使用"></a>运营与使用</h2><p>在使用过程中，笔者还遇到过一个自己原因的失误坑：nginx反代配置问题。宝塔环境下正确的配置步骤如下：</p>
+<ol>
+<li>虽然nginx只用来做反向代理，但是还是建议在面板上新增个网站。因为绑定域名和ssl很方便。<img data-src="https://s3.ax1x.com/2021/01/20/sWnY4O.png" alt="绑定ssl证书">在这里直接就能绑定ssl证书。</li>
+<li>按照官方说明去修改网站的<strong>主</strong>配置文件而不只是反向代理的部分。否则，websocket会用不了……<br><img data-src="https://s3.ax1x.com/2021/01/20/sWuSVx.png" alt="主配置"></li>
+</ol>
+<p>好在misskey作为node.js程序并不需要其他语言环境，不用安装臃肿的php等</p>
+<h2 id="其他大坑"><a href="#其他大坑" class="headerlink" title="其他大坑"></a>其他大坑</h2><ol>
+<li>misskey无法通过systemd运行，目前尚不清楚这个错误怎么搞。</li>
+<li>更新时，<strong>不仅/built需要传到服务器，其他的文件夹也要上传</strong>。这个过于折磨的问题害笔者停机了25小时，因为报错信息根本搞不清楚哪里出问题。感谢<span class="exturl" data-url="aHR0cHM6Ly9kb2djcmFmdC50b3Av">dogcraft大神<i class="fa fa-external-link-alt"></i></span>的指导。</li>
+<li>貌似不能彻底删除用户/频道  </li>
+</ol>
+<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>misskey可能还是不够稳定，扩展性也一般……但作为社交媒体服务还是很优秀的。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 香港轉數快(支援香港微信/支付寶/銀行APP)">
+        <span>香港轉數快(支援香港微信/支付寶/銀行APP)</span>
+      </div>
+      <div>
+        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 大陆微信/支付宝/云闪付/京东支付">
+        <span>大陆微信/支付宝/云闪付/京东支付</span>
+      </div>
+      <div>
+        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin 翼支付">
+        <span>翼支付</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>admin
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.alevel.tech/2021/01/Misskey%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%A4%A9%E5%9D%91/" title="Misskey的安装与天坑">https://blog.alevel.tech/2021/01/Misskey安装过程中的天坑/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+              <a href="/tags/misskey/" rel="tag"># misskey</a>
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" rel="tag"># 分布式</a>
+              <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91/" rel="tag"># 互联网</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
+              <a href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag"># 社交媒体</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/%E9%A3%9E%E8%A1%8C%E4%BA%BA%E7%94%9F%E2%80%94%E2%80%94%E6%96%AD%E7%BD%91%E4%B8%80%E5%91%A8%E4%BD%93%E4%BC%9A/" rel="prev" title="飞行人生——断网一周体会">
+                  <i class="fa fa-chevron-left"></i> 飞行人生——断网一周体会
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-discussbot">discussbot</a></li>
+            <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane discussbot" id="comment-discussbot">
+              
+  
+  <div class="comments" id="discussbot-container">
+  <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="3TSf1W2d" data-limit="5" data-color="2BA245" data-dislikes="1" data-outlined="0"></script>
+  </div>
+  
+  
+            </div>
+            <div class="tab-pane gitalk" id="comment-gitalk">
+              <div class="comments" id="gitalk-container"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">admin</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
+  </div>
+
+	  <!-- Matomo 统计-->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.scie.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/2021/01/Misskey%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%A4%A9%E5%9D%91/',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b5ffcfc9a1ae16735def',
+      clientSecret: '960e9077342e24f12a87775fe8d18eea1cd0e72b',
+      repo        : 'AlevelBlogComments',
+      owner       : 'LCinHK',
+      admin       : ['LCinHK'],
+      id          : '1796dbf775a2f05e14e14a1e36e725c1',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
