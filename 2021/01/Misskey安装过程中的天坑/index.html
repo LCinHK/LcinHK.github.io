@@ -421,13 +421,13 @@
 <p>后面遵循本站为友情链接的<span class="exturl" data-url="aHR0cHM6Ly9kb2djcmFmdC50b3AvYXJjaGl2ZXMvMTQ1LyN0b2NfMQ==">dogcraft大神<i class="fa fa-external-link-alt"></i></span>的流程配置数据库即可，下面说说笔者遇到的第一个<strong>天坑</strong>：</p>
 <ol>
 <li>宝塔面板的添加数据库功能是废的（如图所示的是不能使用的），需要手动添加。<br><img data-src="https://s3.ax1x.com/2021/01/20/sRcozF.png" alt="不要用这个"></li>
-<li>和MySQL相比，postgresql的使用过于非人性化。不仅需要切换到postgres用户，而且使用上也很糟心……<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -i su postgres</span><br><span class="line">/www/server/pgsql/bin/psql  👈对，宝塔安装版不会自动添加进系统path还需要输入完整路径</span><br></pre></td></tr></table></figure>
+<li>和MySQL相比，postgresql的使用有点非人性化。（对像笔者这种菜鸟来说……）不仅需要切换到postgres用户，而且使用上也很糟心……<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -i su postgres</span><br><span class="line">/www/server/pgsql/bin/psql  👈对，宝塔安装版不会自动添加进系统path还需要输入完整路径</span><br></pre></td></tr></table></figure>
 除此之外，作为正常界面的<code>postgres=#</code>和非正常界面的<code>postgres-#</code>长得也太像了吧！而MySQL在没打分号等时候是直接起一空行的。</li>
 <li>再次提醒要小心日志挤爆空间  </li>
 </ol>
 <h3 id="处理主程序"><a href="#处理主程序" class="headerlink" title="处理主程序"></a>处理主程序</h3><p>根据<span class="exturl" data-url="aHR0cHM6Ly9qb2luLm1pc3NrZXkucGFnZS9lbi93aWtpL2RldmVsb3BlcnMvaW5zdGFsbGF0aW9uL2F3cyNNaXNza2V5JUUzJTgxJUFFJUUzJTgzJTkzJUUzJTgzJUFCJUUzJTgzJTg5">官方教程<i class="fa fa-external-link-alt"></i></span>，我们可以在处理速度快的电脑上先编译，编译完了再把主程序上传到misskey用户的目录（图方便）。对于新安装来说没有太大问题，只有几点要注意：</p>
 <ul>
-<li>Windows下编译会比较麻烦，需要安装的webpack包在windows上倾向调用臃肿的visual studio进行编译……如果出现这个错误而你又不想用visual studio的话建议按照错误提示给的链接上去看，有不用的方法。</li>
+<li>Windows下编译会比较麻烦，需要安装的node-gyp包在windows上倾向调用臃肿的visual studio进行编译……如果出现这个错误而你又不想用visual studio的话建议按照错误提示给的链接上去看，有不用的方法。</li>
 <li>.config/default.yml设置要正确。域名提前做好解析，数据库用户名和密码也要对上</li>
 </ul>
 <p>接下来是第二个<strong>天坑</strong>：文件夹的权限问题。笔者在第一次装的时候不停遇到<code>ERR 1 [api] Error: EACCES: permission denied, copyfile </code>问题无法上传文件。老实说，这个错误信息已经告诉了问题出在权限上，不过当时被ls -al返回的信息误判了。实际上即使/misskey文件夹下的目录，如果是用root用户创建（比如上传）的也会有权限问题。  </p>
