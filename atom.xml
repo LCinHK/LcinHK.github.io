@@ -6,7 +6,7 @@
   <link href="https://blog.alevel.tech/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2021-01-15T02:42:00.000Z</updated>
+  <updated>2021-02-14T11:00:01.000Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>例行更新</title>
+    <link href="https://blog.alevel.tech/2021/02/%E4%BE%8B%E8%A1%8C%E6%9B%B4%E6%96%B0/"/>
+    <id>https://blog.alevel.tech/2021/02/%E4%BE%8B%E8%A1%8C%E6%9B%B4%E6%96%B0/</id>
+    <published>2021-02-14T11:00:01.000Z</published>
+    <updated>2021-02-14T11:00:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note warning&quot;&gt;&lt;h4 id=&quot;废文警告&quot;&gt;&lt;a href=&quot;#废文警告&quot; class=&quot;headerlink&quot; title=&quot;废文警告&quot;&gt;&lt;/a&gt;废文警告&lt;/h4&gt;&lt;p&gt;本文与过往不同，是完完全全的废文。&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;第一次挑战与过往不同的文章风格&lt;/p&gt;
+
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="反常" scheme="https://blog.alevel.tech/categories/%E5%8F%8D%E5%B8%B8/"/>
+    
+    
+    <category term="废文" scheme="https://blog.alevel.tech/tags/%E5%BA%9F%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>Misskey的安装与天坑</title>
@@ -333,6 +357,8 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
     <category term="wordpress" scheme="https://blog.alevel.tech/tags/wordpress/"/>
     
     <category term="HEXO" scheme="https://blog.alevel.tech/tags/HEXO/"/>
@@ -344,8 +370,6 @@
     <category term="静态博客" scheme="https://blog.alevel.tech/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="blog" scheme="https://blog.alevel.tech/tags/blog/"/>
-    
-    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -570,27 +594,6 @@
     
     <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>华为账号改区</title>
-    <link href="https://blog.alevel.tech/2019/09/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/"/>
-    <id>https://blog.alevel.tech/2019/09/%E5%8D%8E%E4%B8%BA%E8%B4%A6%E5%8F%B7%E6%94%B9%E5%8C%BA/</id>
-    <published>2019-09-17T04:05:05.000Z</published>
-    <updated>2019-09-17T04:05:05.000Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑&quot;&gt;&lt;a href=&quot;#还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了-笑&quot; class=&quot;headerlink&quot; title=&quot;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了(笑&quot;&gt;&lt;/a&gt;还记得苹果id改区吗？我估计很快就会出华为ID改区的生意了&lt;del&gt;(笑&lt;/del&gt;&lt;/h3&gt;&lt;p&gt;站长前日新注册了一个港区华为账号玩玩&lt;strong&gt;（只需邮箱）&lt;/strong&gt;，然后……具体看图↓&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    
-    <category term="Huawei" scheme="https://blog.alevel.tech/tags/Huawei/"/>
-    
-    <category term="华为" scheme="https://blog.alevel.tech/tags/%E5%8D%8E%E4%B8%BA/"/>
     
   </entry>
   
