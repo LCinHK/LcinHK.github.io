@@ -6,7 +6,7 @@
   <link href="https://blog.alevel.tech/atom.xml" rel="self"/>
   
   <link href="https://blog.alevel.tech/"/>
-  <updated>2021-02-14T11:00:01.000Z</updated>
+  <updated>2021-03-23T11:42:00.000Z</updated>
   <id>https://blog.alevel.tech/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中信银行攻略oracle云</title>
+    <link href="https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/"/>
+    <id>https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/</id>
+    <published>2021-03-23T11:42:00.000Z</published>
+    <updated>2021-03-23T11:42:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;oracle云除了免费试用一个月以外，最出名的大概就是其独有的“永久免费”套餐了。&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;在使用各大visa/万事达借记卡挑战失败后，意外地发现中信银行万事达美元借记卡可以成功注册oracle云。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="干货" scheme="https://blog.alevel.tech/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="借记卡" scheme="https://blog.alevel.tech/tags/%E5%80%9F%E8%AE%B0%E5%8D%A1/"/>
+    
+    <category term="中信银行" scheme="https://blog.alevel.tech/tags/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C/"/>
+    
+    <category term="oracle云" scheme="https://blog.alevel.tech/tags/oracle%E4%BA%91/"/>
+    
+    <category term="VPS" scheme="https://blog.alevel.tech/tags/VPS/"/>
+    
+    <category term="服务器" scheme="https://blog.alevel.tech/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="外币借记卡" scheme="https://blog.alevel.tech/tags/%E5%A4%96%E5%B8%81%E5%80%9F%E8%AE%B0%E5%8D%A1/"/>
+    
+    <category term="oracle" scheme="https://blog.alevel.tech/tags/oracle/"/>
+    
+    <category term="万事达" scheme="https://blog.alevel.tech/tags/%E4%B8%87%E4%BA%8B%E8%BE%BE/"/>
+    
+    <category term="mastercard" scheme="https://blog.alevel.tech/tags/mastercard/"/>
+    
+  </entry>
   
   <entry>
     <title>例行更新</title>
@@ -357,8 +400,6 @@
     
     <category term="教程" scheme="https://blog.alevel.tech/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
     <category term="wordpress" scheme="https://blog.alevel.tech/tags/wordpress/"/>
     
     <category term="HEXO" scheme="https://blog.alevel.tech/tags/HEXO/"/>
@@ -370,6 +411,8 @@
     <category term="静态博客" scheme="https://blog.alevel.tech/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="blog" scheme="https://blog.alevel.tech/tags/blog/"/>
+    
+    <category term="博客" scheme="https://blog.alevel.tech/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -577,23 +620,6 @@
     
     
     <category term="闲话" scheme="https://blog.alevel.tech/tags/%E9%97%B2%E8%AF%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生日快乐</title>
-    <link href="https://blog.alevel.tech/2019/10/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/"/>
-    <id>https://blog.alevel.tech/2019/10/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</id>
-    <published>2019-10-17T00:39:28.000Z</published>
-    <updated>2019-10-17T00:39:28.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;生日快乐&quot;&gt;&lt;a href=&quot;#生日快乐&quot; class=&quot;headerlink&quot; title=&quot;生日快乐&quot;&gt;&lt;/a&gt;生日快乐&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="日常" scheme="https://blog.alevel.tech/categories/%E6%97%A5%E5%B8%B8/"/>
-    
     
   </entry>
   

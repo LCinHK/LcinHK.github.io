@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN,zh-HK,en,ja,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://avaimg.nosdn.127.net/img/dmgyS1ZZOStJU2dWUENybnhyYTkyMkJYSTlFM1pDSzIwRlFtZjRReHFTU3ExZm9ZcFdxY0V3PT0.jpg?imageView&thumbnail=16x16&quality=90&type=jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Ta3ILTtLHz">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.alevel.tech","root":"/","scheme":"Gemini","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+
+  <meta name="description" content="oracle云除了免费试用一个月以外，最出名的大概就是其独有的“永久免费”套餐了。   在使用各大visa&#x2F;万事达借记卡挑战失败后，意外地发现中信银行万事达美元借记卡可以成功注册oracle云。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中信银行攻略oracle云">
+<meta property="og:url" content="https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/index.html">
+<meta property="og:site_name" content="A级博客">
+<meta property="og:description" content="oracle云除了免费试用一个月以外，最出名的大概就是其独有的“永久免费”套餐了。   在使用各大visa&#x2F;万事达借记卡挑战失败后，意外地发现中信银行万事达美元借记卡可以成功注册oracle云。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.alevel.tech/images/%E4%B8%AD%E4%BF%A1%E6%96%87qrcode.png">
+<meta property="og:image" content="https://obs-emcsapp-public.obs.cn-north-4.myhwclouds.com/wechatSpider/modb_20200429_082858.png">
+<meta property="article:published_time" content="2021-03-23T11:42:00.000Z">
+<meta property="article:modified_time" content="2021-03-23T11:42:00.000Z">
+<meta property="article:author" content="admin">
+<meta property="article:tag" content="干货">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="借记卡">
+<meta property="article:tag" content="中信银行">
+<meta property="article:tag" content="oracle云">
+<meta property="article:tag" content="VPS">
+<meta property="article:tag" content="服务器">
+<meta property="article:tag" content="外币借记卡">
+<meta property="article:tag" content="oracle">
+<meta property="article:tag" content="万事达">
+<meta property="article:tag" content="mastercard">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.alevel.tech/images/%E4%B8%AD%E4%BF%A1%E6%96%87qrcode.png">
+
+
+<link rel="canonical" href="https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>中信银行攻略oracle云 | A级博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158063420-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158063420-2');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+  <script data-ad-client="ca-pub-2894842076773522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--666-->
+
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script src="/js/cursor/explosion.min.js"></script>
+  
+
+<link rel="alternate" href="/atom.xml" title="A级博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">A级博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">A级博、Alevel blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E8%A6%81%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">前置要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E6%88%98"><span class="nav-number">2.</span> <span class="nav-text">实战</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%BB%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E5%BC%80%E6%88%B7"><span class="nav-number">2.1.</span> <span class="nav-text">去中信银行开户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E4%B8%8A%E7%94%B3%E8%AF%B7"><span class="nav-number">2.1.1.</span> <span class="nav-text">线上申请</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%97%B6%E7%94%B3%E8%AF%B7%E5%BC%A0%E9%93%B6%E8%81%94%E5%8D%A1"><span class="nav-number">2.1.2.</span> <span class="nav-text">同时申请张银联卡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%89%E5%8D%A1%E5%AF%84%E5%88%B0"><span class="nav-number">2.1.3.</span> <span class="nav-text">等卡寄到</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%84%E7%BA%A6%E7%BD%91%E7%82%B9"><span class="nav-number">2.1.4.</span> <span class="nav-text">预约网点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E6%88%98oracle%E4%BA%91"><span class="nav-number">2.2.</span> <span class="nav-text">实战oracle云</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A0%E8%BD%BD%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.2.1.</span> <span class="nav-text">加载页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A1%AB%E5%86%99%E8%B5%84%E6%96%99"><span class="nav-number">2.2.2.</span> <span class="nav-text">填写资料</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8A%A1%E5%BF%85%E5%A1%AB%E5%86%99%E5%AE%8C%E5%85%A8%E7%9C%9F%E5%AE%9E%E8%B5%84%E6%96%99%EF%BC%81"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">务必填写完全真实资料！</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%93%B6%E8%A1%8C%E5%8D%A1%E9%AA%8C%E8%AF%81"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">银行卡验证</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E6%8E%A7%E5%88%B6%E6%9D%BF"><span class="nav-number">2.2.3.</span> <span class="nav-text">进控制板</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">备注</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Oracle%E4%BA%91%E6%80%8E%E4%B9%88%E7%94%A8%EF%BC%9F"><span class="nav-number">2.3.</span> <span class="nav-text">Oracle云怎么用？</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="admin"
+      src="https://avatars1.githubusercontent.com/u/49670244?s=460&v=4">
+  <p class="site-author-name" itemprop="name">admin</p>
+  <div class="site-description" itemprop="description">A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xDaW5ISw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LCinHK"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGFsZXZlbC50ZWNo" title="E-Mail → mailto:admin@alevel.tech"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90eC5tZS9JbnN0YW50VGVjaFRpcHM=" title="Telegram → https:&#x2F;&#x2F;tx.me&#x2F;InstantTechTips"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9sY2luaGsubG9mdGVyLmNvbQ==" title="Lofter → https:&#x2F;&#x2F;lcinhk.lofter.com"><i class="fas fa-laugh fa-fw"></i>Lofter</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;forum.alevel.tech">国交论坛</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9hbGV2ZWwudGVjaA==" title="https:&#x2F;&#x2F;alevel.tech">alevel.tech</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="/./about#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5" title=".&#x2F;about#友情链接">友情链接页</a>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 博客 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="6534377086"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/49670244?s=460&v=4">
+      <meta itemprop="name" content="admin">
+      <meta itemprop="description" content="A级博、Alevel blog 个人技术博客，分享一些谷歌搜不到的技巧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="A级博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          中信银行攻略oracle云
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-23 19:42:00" itemprop="dateCreated datePublished" datetime="2021-03-23T19:42:00+08:00">2021-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2894842076773522"
+     data-ad-slot="9480035167"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <blockquote class="blockquote-center">
+<p>oracle云除了免费试用一个月以外，最出名的大概就是其独有的“永久免费”套餐了。</p>
+
+</blockquote>
+<p>在使用各大visa/万事达借记卡挑战失败后，意外地发现中信银行万事达美元借记卡可以成功注册oracle云。</p>
+<a id="more"></a>
+<h2 id="前置要求"><a href="#前置要求" class="headerlink" title="前置要求"></a>前置要求</h2><p>如果你不是中信银行客户，那么你需要满足以下要求才能准备接受挑战：</p>
+<ol>
+<li>年满16周岁的中国大陆居民</li>
+<li>使用自己实名1年以上手机号绑定银行</li>
+<li>拥有所在地户籍/居留卡</li>
+<li>有社保</li>
+<li>有稳定地址接收随时有可能寄到的卡片（挂号信需本人签收）</li>
+<li>能等个4～7天</li>
+<li>有还没用完的外汇额度/手上有美元  </li>
+</ol>
+<p>为什么看起来这么麻烦？实际即使满足所有条件也有少于一成概率失败，而根本原因是四个大字：<strong>断卡</strong>行动</p>
+<h2 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h2><h3 id="去中信银行开户"><a href="#去中信银行开户" class="headerlink" title="去中信银行开户"></a>去中信银行开户</h3><p>首先，请<del>摆正</del>审视自己的位置：我是中信银行新客户？老客户？是有钱的阔佬？是没钱的穷人？尽管接下来的教程会是一个适合所有客户的教程，但不同类型的客户仍会在细节上遇到些不同，请灵活变通。<strong>本教程仅供参考</strong></p>
+<h4 id="线上申请"><a href="#线上申请" class="headerlink" title="线上申请"></a>线上申请</h4><p>如果你在使用手机阅读这篇文章，可以使用<span class="exturl" data-url="aHR0cHM6Ly93d3cubWNlYXJubW9yZS5jb20vMjAyMC9jaXRpYy1oNS9pbmRleC5odG1s">直接申请链接<i class="fa fa-external-link-alt"></i></span>。如果你在电脑等设备阅读这篇文章可以使用手机扫描下面的申请二维码：</p>
+<p><img data-src="/images/%E4%B8%AD%E4%BF%A1%E6%96%87qrcode.png" alt="手机扫描申请二维码"></p>
+<p>考虑到白金卡和世界卡对应的福利和年费不同，请自行选择适合自己的卡种并填入资料进行申卡操作。目前第一年的年费是不收取的状态，但每个人需求不同，量力而为。</p>
+<div class="note info"><h4 id="同时申请张银联卡"><a href="#同时申请张银联卡" class="headerlink" title="同时申请张银联卡"></a>同时申请张银联卡</h4><p>如果你此前并不是中信银行客户的话，你必须先拥有一张中信银行个人1类账户用来进行网银、手银操作和结售汇。<br>因此，推荐在<span class="exturl" data-url="aHR0cHM6Ly95ai53YW5ncHUzNjUuY29tLz9zaXRlPWF0aXR5JmN0bD1jYXJkTWFya2V0JmFjdD1pbmRleA==">这里<i class="fa fa-external-link-alt"></i></span><strong>同时申请张喜欢的银联卡</strong>作为你在中信银行的1类账户。</p>
+</div>
+
+<h4 id="等卡寄到"><a href="#等卡寄到" class="headerlink" title="等卡寄到"></a>等卡寄到</h4><p>目前对于网申借记卡，中信银行采用ems航空挂号件包一枚装着卡的信封来发送。当天寄出一般2天内就能到，速度非常快。由于是挂号信，<strong>建议本人签收</strong>。信封里装有借记卡，借记卡信息和用来粘贴借记卡的信纸。从内容上来看这些信纸还是2018年的版本，上面的优惠信息没有参考价值。</p>
+<h4 id="预约网点"><a href="#预约网点" class="headerlink" title="预约网点"></a>预约网点</h4><p>还记得之前提到的前置要求吗？准备好收到的卡片（连着信封一起）、智能手机、身份证和社保卡并约一个开户网点。虽然不需要去柜台激活，但是受近期“断卡行动”影响激活需花时间会比较长。建议去人少的网点，并在非高峰时段办理。<br>下面是在银行网点激活的几个要点：</p>
+<ol>
+<li>受“断卡行动”影响，请做好会花较长时间签署文件和审查证件的准备。</li>
+<li>原则上银行<strong>只需要身份证和实名手机号</strong>就应允许开户。网申借记卡<strong>不存在</strong>资产等要求，如果被要求存多少钱的理财可以拒绝。</li>
+<li>直接去机器操作会比较简单，最后由大堂经理进行授权就行。但是受“断卡行动”影响，核验身份的责任在给你进行授权的职员身上。  </li>
+</ol>
+<h3 id="实战oracle云"><a href="#实战oracle云" class="headerlink" title="实战oracle云"></a>实战oracle云</h3><p>那么，我们假设你已经成功激活了你的中信银行万事达美元借记卡，并且通过存美元现钞或购汇的方式往里面存入了至少**$1**美元以上（推荐$1.5用于oracle云卡验证）。</p>
+<h4 id="加载页面"><a href="#加载页面" class="headerlink" title="加载页面"></a>加载页面</h4><p>由于非常倒霉的原因（比如你的网络由<del>万恶的</del>长城宽带提供），大部分的人在oracle云注册网页上会遇到几个加载不出来的部件（据普遍反馈是卡验证模块，调用的外部js等很难加载出来）。这个时候应该怎么办呢？请遵循以下步骤：</p>
+<ol>
+<li>使用优质网络进行一遍试注册，并且在验证银行卡的地方停下</li>
+<li>确保优质网络能够加载出下面这张图片里的全部内容（图片来源：<span class="exturl" data-url="aHR0cHM6Ly93d3cubW9kYi5wcm8vZGIvMjQ2MjY=">此文章<i class="fa fa-external-link-alt"></i></span>第六张图）<br><img data-src="https://obs-emcsapp-public.obs.cn-north-4.myhwclouds.com/wechatSpider/modb_20200429_082858.png" alt="支付方式"></li>
+<li>确保加载完成图里的支付模块后，切换回自己的常用网络。</li>
+<li>在绝对不要使浏览器缓存失效或被清除的情况下，在oracle申请网页内重新注册。</li>
+</ol>
+<h4 id="填写资料"><a href="#填写资料" class="headerlink" title="填写资料"></a>填写资料</h4><h5 id="务必填写完全真实资料！"><a href="#务必填写完全真实资料！" class="headerlink" title="务必填写完全真实资料！"></a>务必填写完全真实资料！</h5><p>一般来说，在使用真实大陆资料（包括手机号住址和你成功激活，卡内有$1美元余额的中信银行万事达借记卡）进行注册成功率会最高。完全按照真实信息填写即可，没有任何“技巧”。不过，这里的资料别忘了，尤其是cloud account name和你选择了的账户机器主地域。</p>
+<h5 id="银行卡验证"><a href="#银行卡验证" class="headerlink" title="银行卡验证"></a>银行卡验证</h5><p>验证有两个要点：</p>
+<ul>
+<li>验证，卡里须有超过$1SGD新加坡币的验证金。这笔钱不会被扣掉。</li>
+<li><strong>Oracle云会在几天内进行再次验证</strong>，并且不确定是否会进行三次验证。建议不要在30天试用期结束之前将卡里的资金转走。</li>
+</ul>
+<h4 id="进控制板"><a href="#进控制板" class="headerlink" title="进控制板"></a>进控制板</h4><p>九成的成功注册应在注册成功后直接进入控制面板。 对于选择了东京、汉城等网速快的地区更是会直接进入。如果能够进入控制面板的话，恭喜你成功了！</p>
+<h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><p>后面登录时要先输cloud account name再输入账户密码。</p>
+<h3 id="Oracle云怎么用？"><a href="#Oracle云怎么用？" class="headerlink" title="Oracle云怎么用？"></a>Oracle云怎么用？</h3><p>永久免费的套餐非常适合建站，而30天内试用期实际上$400SGD的额度足够把能开的VPS全开了，可以进行重量测试、云计算或爽一把，但只有30天，不适合长期用途。Oracle云的一个福利是在你只需要永久免费套餐时<strong>无需按升级按钮升级成付费套餐</strong>，不用担心突然扣款和欠费问题。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/%E8%BD%89%E6%95%B8%E5%BF%AB.jpg" alt="admin 香港轉數快(支援香港微信/支付寶/銀行APP)">
+        <span>香港轉數快(支援香港微信/支付寶/銀行APP)</span>
+      </div>
+      <div>
+        <img src="/images/%E5%A4%9A%E5%90%88%E4%B8%80.jpg" alt="admin 大陆微信/支付宝/云闪付/京东支付">
+        <span>大陆微信/支付宝/云闪付/京东支付</span>
+      </div>
+      <div>
+        <img src="/images/%E7%BF%BC%E6%94%AF%E4%BB%98.jpg" alt="admin 翼支付">
+        <span>翼支付</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>admin
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/" title="中信银行攻略oracle云">https://blog.alevel.tech/2021/03/中信银行攻略oracle云/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://tx.me/InstantTechTips">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%B9%B2%E8%B4%A7/" rel="tag"># 干货</a>
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+              <a href="/tags/%E5%80%9F%E8%AE%B0%E5%8D%A1/" rel="tag"># 借记卡</a>
+              <a href="/tags/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C/" rel="tag"># 中信银行</a>
+              <a href="/tags/oracle%E4%BA%91/" rel="tag"># oracle云</a>
+              <a href="/tags/VPS/" rel="tag"># VPS</a>
+              <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag"># 服务器</a>
+              <a href="/tags/%E5%A4%96%E5%B8%81%E5%80%9F%E8%AE%B0%E5%8D%A1/" rel="tag"># 外币借记卡</a>
+              <a href="/tags/oracle/" rel="tag"># oracle</a>
+              <a href="/tags/%E4%B8%87%E4%BA%8B%E8%BE%BE/" rel="tag"># 万事达</a>
+              <a href="/tags/mastercard/" rel="tag"># mastercard</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/%E4%BE%8B%E8%A1%8C%E6%9B%B4%E6%96%B0/" rel="prev" title="例行更新">
+                  <i class="fa fa-chevron-left"></i> 例行更新
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-discussbot">discussbot</a></li>
+            <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane discussbot" id="comment-discussbot">
+              
+  
+  <div class="comments" id="discussbot-container">
+  <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="3TSf1W2d" data-limit="5" data-color="2BA245" data-dislikes="1" data-outlined="0"></script>
+  </div>
+  
+  
+            </div>
+            <div class="tab-pane gitalk" id="comment-gitalk">
+              <div class="comments" id="gitalk-container"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">admin</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb7a3d5e731437" async="async"></script>
+  </div>
+
+	  <!-- Matomo 统计-->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.scie.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://blog.alevel.tech/2021/03/%E4%B8%AD%E4%BF%A1%E9%93%B6%E8%A1%8C%E6%94%BB%E7%95%A5oracle%E4%BA%91/',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b5ffcfc9a1ae16735def',
+      clientSecret: '960e9077342e24f12a87775fe8d18eea1cd0e72b',
+      repo        : 'AlevelBlogComments',
+      owner       : 'LCinHK',
+      admin       : ['LCinHK'],
+      id          : '4fa32f86ff9233cf90a229135ba68730',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
